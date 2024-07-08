@@ -1,0 +1,31 @@
+.section-metrics {
+    text-align: center;
+
+    &__img { width: 100%;}
+
+    &__text {
+        font-size: 2.5rem;
+        font-weight: 300;
+        margin-bottom: 5%;
+    }
+
+    &__card {
+        margin: 5%;
+
+        &__img {
+            position: absolute;
+            left: 50%;
+            margin-top: .4rem;
+        }
+
+        &__number {
+            margin: 1rem;
+            font-style: Raleway;
+            font-weight: 800;
+            size: .5rem;
+            letter-spacing: .15rem;
+        }
+
+        &__text { color: gray;}
+    }
+}

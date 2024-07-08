@@ -1,0 +1,45 @@
+.section-info {
+    padding: 1rem;
+    background-color: #F7F7F7;
+
+    &__article {
+        padding: 1rem;
+        margin: 1rem;
+        background-color: white;
+        text-align: left;
+
+        &__img-container {
+            width: 100%;
+            margin-block: 3rem;
+            text-align: center;
+        }
+
+        &__bg-img {       
+
+            &__right {
+                width: 7rem;
+                transform: translate(55%, -25%);
+            }
+
+            &__center {
+                width: 9rem;
+                transform: translate(-25%, -15%);
+            }
+        }
+
+        .right{
+            transform: translate(10%, -25%);
+        }
+
+        &__top-img {
+            position: absolute;
+            left: 25%;
+        }
+
+        &__headline {
+            font-style: Raileway;
+            font-weight: 400;
+            font-size: 2.1rem;
+        }
+    }
+}

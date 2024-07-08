@@ -1,0 +1,20 @@
+.article-open {
+  margin: 1rem;
+  margin-top: 5rem;
+  text-align: center; }
+  .article-open__title {
+    font-size: xx-large; }
+  .article-open__description {
+    margin: 2rem; }
+  .article-open__button {
+    width: 90%;
+    height: 4.5rem;
+    background-color: #08A6E4;
+    border-radius: 40px;
+    box-shadow: 1px 1px 20px rgba(122, 201, 213, 0.6);
+    font-size: large;
+    font-style: Open Sans;
+    font-weight: 700;
+    color: white; }
+
+/*# sourceMappingURL=article-open.css.map */

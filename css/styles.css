@@ -1,0 +1,93 @@
+.top-nav {
+  width: 100%;
+  padding: 1.5rem;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.6); }
+  .top-nav__title {
+    color: #08A6E4;
+    font-style: Raleway;
+    font-weight: 300;
+    font-size: xx-large; }
+  .top-nav__img {
+    position: absolute;
+    right: 1.5rem;
+    top: 2.5rem; }
+
+.article-open {
+  margin: 1rem;
+  margin-top: 5rem;
+  text-align: center; }
+  .article-open__title {
+    font-size: xx-large; }
+  .article-open__description {
+    margin: 2rem; }
+  .article-open__button {
+    width: 90%;
+    height: 4.5rem;
+    background-color: #08A6E4;
+    border-radius: 40px;
+    box-shadow: 1px 1px 20px rgba(122, 201, 213, 0.6);
+    font-size: large;
+    font-style: Open Sans;
+    font-weight: 700;
+    color: white; }
+
+.section-metrics {
+  text-align: center; }
+  .section-metrics__img {
+    width: 100%; }
+  .section-metrics__text {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin-bottom: 5%; }
+  .section-metrics__card {
+    margin: 5%; }
+    .section-metrics__card__img {
+      position: absolute;
+      left: 50%;
+      margin-top: .4rem; }
+    .section-metrics__card__number {
+      margin: 1rem;
+      font-style: Raleway;
+      font-weight: 800;
+      size: .5rem;
+      letter-spacing: .15rem; }
+    .section-metrics__card__text {
+      color: gray; }
+
+.section-info {
+  padding: 1rem;
+  background-color: #F7F7F7; }
+  .section-info__article {
+    padding: 1rem;
+    margin: 1rem;
+    background-color: white;
+    text-align: left; }
+    .section-info__article__img-container {
+      width: 100%;
+      margin-block: 3rem;
+      text-align: center; }
+    .section-info__article__bg-img__right {
+      width: 7rem;
+      transform: translate(55%, -25%); }
+    .section-info__article__bg-img__center {
+      width: 9rem;
+      transform: translate(-25%, -15%); }
+    .section-info__article .right {
+      transform: translate(10%, -25%); }
+    .section-info__article__top-img {
+      position: absolute;
+      left: 25%; }
+    .section-info__article__headline {
+      font-style: Raileway;
+      font-weight: 400;
+      font-size: 2.1rem; }
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; }
+
+body {
+  min-width: 320px; }
+
+/*# sourceMappingURL=styles.css.map */

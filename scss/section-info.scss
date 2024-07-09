@@ -9,6 +9,7 @@
         text-align: left;
 
         &__img-container {
+            position: relative;
             width: 100%;
             margin-block: 3rem;
             text-align: center;
@@ -18,17 +19,13 @@
 
             &__right {
                 width: 7rem;
-                transform: translate(55%, -25%);
+                right: 20rem;
             }
 
             &__center {
                 width: 9rem;
                 transform: translate(-25%, -15%);
             }
-        }
-
-        .right{
-            transform: translate(10%, -25%);
         }
 
         &__top-img {

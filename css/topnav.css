@@ -2,5 +2,25 @@
   position: absolute;
   right: 1.5rem;
   top: 2.5rem; }
+.top-nav__menu {
+  position: absolute;
+  right: 0;
+  top: 50%; }
+  .top-nav__menu span {
+    margin-inline: 1.2rem; }
+
+nav.edge {
+  position: relative;
+  width: 100%;
+  padding: 1.5rem;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.6);
+  column-count: 2; }
+
+@media screen and (min-width: 600px) {
+  .top-nav__img {
+    display: none; } }
+@media screen and (max-width: 600px) {
+  .top-nav__menu {
+    display: none; } }
 
 /*# sourceMappingURL=topnav.css.map */

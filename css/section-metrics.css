@@ -7,6 +7,7 @@
     font-weight: 300;
     margin-bottom: 5%; }
   .section-metrics__card {
+    position: relative;
     margin: 5%; }
     .section-metrics__card__img {
       position: absolute;
@@ -20,5 +21,9 @@
       letter-spacing: .15rem; }
     .section-metrics__card__text {
       color: gray; }
+
+@media screen and (min-width: 600px) {
+  .section-metrics > div {
+    column-count: 3; } }
 
 /*# sourceMappingURL=section-metrics.css.map */

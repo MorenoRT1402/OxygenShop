@@ -10,6 +10,7 @@
     }
 
     &__card {
+        position: relative;
         margin: 5%;
 
         &__img {
@@ -27,5 +28,11 @@
         }
 
         &__text { color: gray;}
+    }
+}
+
+@media screen and (min-width : 600px) {
+    .section-metrics > div {
+        column-count: 3;
     }
 }

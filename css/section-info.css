@@ -7,17 +7,16 @@
     background-color: white;
     text-align: left; }
     .section-info__article__img-container {
+      position: relative;
       width: 100%;
       margin-block: 3rem;
       text-align: center; }
     .section-info__article__bg-img__right {
       width: 7rem;
-      transform: translate(55%, -25%); }
+      right: 20rem; }
     .section-info__article__bg-img__center {
       width: 9rem;
       transform: translate(-25%, -15%); }
-    .section-info__article .right {
-      transform: translate(10%, -25%); }
     .section-info__article__top-img {
       position: absolute;
       left: 25%; }

@@ -25,3 +25,11 @@
         color: white;
     }
 }
+
+@media screen and (min-width : 600px) {
+    .article-open {
+        &__button {
+            max-width : 440px
+        }
+    }
+}

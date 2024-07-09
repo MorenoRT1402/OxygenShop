@@ -1,0 +1,15 @@
+footer .rights {
+  font-size: small;
+  font-style: 'Open Sans';
+  font-weight: 400;
+  color: #A5A5A5; }
+footer .social {
+  position: absolute;
+  vertical-align: middle;
+  right: 10%;
+  transform: translateY(-150%);
+  text-align: right; }
+  footer .social img {
+    margin-inline: .5rem; }
+
+/*# sourceMappingURL=footer.css.map */

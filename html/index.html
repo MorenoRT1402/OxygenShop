@@ -7,8 +7,8 @@
     <title>Module 1 HTML & CSS</title>
 </head>
 <body>
-    <nav class="top-nav">
-        <header class="top-nav__title">OXYGENShop</header>
+    <nav class="edge">
+        <header class="title">OXYGENShop</header>
         <img class= " top-nav__img" src= "./../res/Menu.png" alt=""/>
     </nav>
     <article class="article-open">
@@ -16,7 +16,7 @@
         <p class="article-open__description">Open shop on our platform and increase your sales</p>
         <button class="article-open__button">Open your shop</button>
     </article>
-
+<!--Metrics -->
     <section class="section-metrics">
         <img class="section-metrics__img" src="./../res/Background 1.png" alt=""></img>
         <p class="section-metrics__text">The most popular sales platform in country</p>
@@ -27,12 +27,14 @@
             <p class="section-metrics__card__number">100000+</p>
             <p class="section-metrics__card__text">daily entries</p>
         </div>
+
         <div class="section-metrics__card">
             <img src="./../res/Ellipse 2.png" alt=""/>
             <img class="section-metrics__card__img" src="./../res/Eye 2.png" alt=""/>
             <p class="section-metrics__card__number">2000000+</p>
             <p class="section-metrics__card__text">seen products every day</p>
         </div>
+
         <div class="section-metrics__card">
             <img src="./../res/Ellipse Green.png" alt=""/>
             <img class="section-metrics__card__img" src="./../res/Catalog 2.png" alt=""/>
@@ -40,7 +42,7 @@
             <p class="section-metrics__card__text">added posts daily</p>
         </div>
     </section>
-
+<!--Section info -->
     <section class="section-info">
         <article class="section-info__article">
             <div class="section-info__article__img-container">
@@ -52,6 +54,7 @@
                 tempor incididunt ut labore et dolore magna aliqua. 
                 Ut enim ad minim veniam.</p>
         </article>
+
         <article class="section-info__article">
             <div class="section-info__article__img-container">
                 <img class="section-info__article__bg-img__center" src="./../res/Ellipse 2.png" alt="">
@@ -62,6 +65,7 @@
                 tempor incididunt ut labore et dolore magna aliqua. 
                 Ut enim ad minim veniam.</p>
         </article>
+
         <article class="section-info__article">
             <p class="section-info__article__headline">Increase recognition your brand!</p>
             <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
@@ -73,6 +77,108 @@
             </div>
         </article>
     </section>
+<!--section pricing -->
+    <section class="section-pricing">
+        <header class="section-pricing__header">Pricing</header>
+        <article class="section-pricing__card section-pricing__card--red">
+            <div class="section-pricing__card__div">
+                <header class="section-pricing__card__plan">Basic</header>
+                <p class="plan-price plan-price--red">$0</p>
+            </div>
+            <div class="section-pricing__card__div">
+                <ul>
+                    <li class="section-pricing__card__element--active">100 MB HDD</li>
+                    <li class="section-pricing__card__element--active">1 Subdomain</li>
+                    <li class="section-pricing__card__element--active">2 E-mails</li>
+                    <li class="section-pricing__card__element--inactive">Two years license</li>
+                    <li class="section-pricing__card__element--inactive">Full support</li>
+                </ul>
+            </div>
+            <button class="plan-button plan-button--red">Begin</button>
+        </article>
+
+        <article class="section-pricing__card section-pricing__card--blue">
+            <div class="section-pricing__card__div">
+                <header class="section-pricing__card__plan">Professional</header>
+                <p class="plan-price plan-price--blue">$25</p>
+                <p>Limited offer</p>
+            </div>
+            <div class="section-pricing__card__div">
+                <ul>
+                    <li class="section-pricing__card__element--active">500 MB HDD</li>
+                    <li class="section-pricing__card__element--active">2 Subdomains</li>
+                    <li class="section-pricing__card__element--active">5 E-mails</li>
+                    <li class="section-pricing__card__element--active">One year license</li>
+                    <li class="section-pricing__card__element--inactive">Full support</li>
+                </ul>
+            </div>
+            <button class="plan-button plan-button--blue">Begin</button>
+        </article>
+
+        <article class="section-pricing__card section-pricing__card--green">
+            <div class="section-pricing__card__div">
+                <header class="section-pricing__card__plan">Premium</header>
+                <p class="plan-price plan-price--green">$60</p>
+                <p>Limited offer</p>
+            </div>
+            <div class="section-pricing__card__div">
+                <ul>
+                    <li class="section-pricing__card__element--active">2 GB HDD</li>
+                    <li class="section-pricing__card__element--active">5 Subdomains</li>
+                    <li class="section-pricing__card__element--active">20 E-mails</li>
+                    <li class="section-pricing__card__element--active">Two years license</li>
+                    <li class="section-pricing__card__element--active">Full support</li>
+                </ul>
+            </div>
+            <button class="plan-button plan-button--green">Begin</button>
+        </article>
+    </section>
+
+    <form class="form-contact">
+        <header>Any questions?</header>
+        <p>Leave your email address or call us!</p>
+        <section class="form-contact__data">
+            <div>
+                <img src="./../res/Vector.png" alt=""/>
+                <span>info@bestshop.xyz</span>
+            </div>
+            <div>
+                <img src="./../res/phone-icon.png" alt=""/>
+                <span>123 456 789</span>
+            </div>
+        </section>
+
+        <div class="form-contact__input">
+            <label for="name">NAME</label><br>
+            <input type="text" id="name">
+        </div>
+        <div class="form-contact__input">
+            <label for="email">EMAIL</label><br>
+            <input type="email" id="email">
+        </div>
+
+        <div class="form-contact__terms">
+            <input type="checkbox"/>
+            <span>I hereby give consent for my personal data included in my application 
+                to be processed for the purposes of the recruitment process under the 
+                European Parliament’s and Council of the European Union Regulation on the 
+                Protection of Natural Persons as of 27 April 2016, with regard to the 
+                processing of personal data and on the free movement of such data, and 
+                repealing Directive 95/46/EC (Data Protection Directive)</span>
+        </div>
+        <input class="form-contact__submit" type="submit" value="Send"/>
+    </form>
+
+    <footer class="edge">
+        <div class="left">
+            <p class="title">OXYGENShop</p>
+            <p class="rights">© 2022 OXYGEN, All Rights Reserved</p>
+        </div>
+        <div class="social">
+            <img src="./../res/Twitter.png" alt="">
+            <img src="./../res/Facebook.png" alt="">
+        </div>
+    </footer>
     
 </body>
 </html>

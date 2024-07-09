@@ -1,0 +1,71 @@
+$red : #FB3B64; $crimson : #EB476E; $vividsky : #07ACE6; $blue : #07ACE6; 
+$aquamarine : #55DFB4; $green : #55DFB4;
+$checkbox : './../res/Checkbox.png'; $cross : './../res/Cross.png';
+
+.section-pricing {
+    text-align: center;
+
+    &__header { font-style: Raleway; font-weight: 400; font-size: xx-large; }
+
+    &__card {
+        position: relative;
+        margin: 5%;
+        display: inline-block;
+        vertical-align: top;
+        width: 80%;
+        padding: 4%;
+
+        @mixin cardBorder ($color : $red ) { border: 1px solid $color; border-radius: 18px; }
+
+        &--red { @include cardBorder($red) }
+        &--blue { @include cardBorder($blue) }
+        &--green { @include cardBorder($green) }
+
+        &__plan { font-weight: 700; }
+
+        &__div { 
+            display: inline-block; 
+            width: 49%;
+            vertical-align: middle; 
+            margin: 0 0;
+        }
+
+        li {
+            margin-bottom: 10%;
+            margin-left: 20%;
+        }
+
+        &__element {
+            &--active {
+                list-style-image: url($checkbox);
+            }
+            &--inactive {
+                list-style-image: url($cross);
+            }
+        }
+    }
+}
+
+.plan-price {
+    font-size: xx-large;
+
+    @mixin planPrice ($color : $red ) { color: $color; }
+    &--red { @include planPrice($red) }
+    &--blue { @include planPrice($blue) }
+    &--green { @include planPrice($green) }
+}
+
+.plan-button {
+    position: absolute; 
+    top: 90%; left: 25%;
+    border-radius: 23px;
+    width: 50%; height: 20%;
+    color: white;
+    border: none;
+
+    @mixin buttonBg($color : $crimson) { background-color: $color; }
+
+    &--red { @include buttonBg($crimson) }
+    &--blue { @include buttonBg($vividsky) }
+    &--green { @include buttonBg($aquamarine) }
+}

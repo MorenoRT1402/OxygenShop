@@ -1,0 +1,62 @@
+$color : #08A6E4;
+
+.form-contact {
+    margin: 9%;
+    header {
+        font-style: Raleway;
+        font-weight: 400;
+        font-size: 3rem;
+    }
+
+    &__data {
+        margin-block: 10%;
+
+        div {
+            column-count: 2;
+            text-align: left;
+
+            span { 
+                margin-left: 3%; height: 100%; vertical-align: middle;
+                font-style: 'Open Sans'; font-weight: 600;
+                color: #A5A5A5;
+            }
+        }
+    }
+
+    &__input {
+        margin-bottom: 2rem;
+        label {
+            color: $color;
+            letter-spacing: .25rem;
+            font-size: .9rem;
+            font-style: 'Open Sans';
+            font-weight: 600;
+        }
+
+        input {
+            width: 100%;
+            border: 0;
+            border-bottom: .1rem solid #95989A;
+        }
+    }
+
+    &__terms {
+        margin-bottom: 2rem;
+    }
+}
+
+.form-contact > p {
+        font-size: large;
+}
+
+.form-contact__submit {
+    position: relative;
+    left: 30%;
+    width: 70%;
+    height: 4rem;
+    border-radius: 35px;
+    background-color: $color;
+    color: white;
+    border: 0;
+    box-shadow: 0 4px 20px -6px $color;
+}

@@ -16,13 +16,13 @@ nav.edge {
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.6);
   column-count: 2; }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
   .top-nav__img {
     display: none; }
 
   .top-nav__menu :last-child {
     margin-right: 4rem; } }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   .top-nav__menu {
     display: none; } }
 

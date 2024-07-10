@@ -9,10 +9,10 @@
   padding: 1.5rem;
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.6); }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
   .desktop--none {
     display: none; } }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   .mobile--none {
     display: none; } }
 .top-nav__img {
@@ -33,13 +33,13 @@ nav.edge {
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.6);
   column-count: 2; }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
   .top-nav__img {
     display: none; }
 
   .top-nav__menu :last-child {
     margin-right: 4rem; } }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   .top-nav__menu {
     display: none; } }
 .article-open {
@@ -61,7 +61,7 @@ nav.edge {
     font-weight: 700;
     color: white; }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
   .article-open__button {
     max-width: 440px; } }
 .section-metrics {
@@ -88,7 +88,7 @@ nav.edge {
     .section-metrics__card__text {
       color: gray; }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
   .section-metrics__div {
     display: flex;
     flex-direction: row;
@@ -143,7 +143,7 @@ nav.edge {
       font-size: 2.1rem;
       margin-bottom: 2rem; }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
   .section-info {
     padding: 5rem; }
     .section-info__article {
@@ -199,7 +199,9 @@ nav.edge {
     display: inline-block;
     vertical-align: top;
     width: 80%;
-    padding: 4%; }
+    padding: 3%; }
+    .section-pricing__card:hover {
+      transform: scale(1.2); }
     .section-pricing__card--red {
       border: 1px solid #FB3B64;
       border-radius: 18px; }
@@ -209,13 +211,19 @@ nav.edge {
     .section-pricing__card--green {
       border: 1px solid #55DFB4;
       border-radius: 18px; }
+    .section-pricing__card--red:hover {
+      box-shadow: 1px 1px 20px #FB3B64; }
+    .section-pricing__card--blue:hover {
+      box-shadow: 1px 1px 20px #07ACE6; }
+    .section-pricing__card--green:hover {
+      box-shadow: 1px 1px 20px #55DFB4; }
     .section-pricing__card__plan {
       font-weight: 700; }
     .section-pricing__card__div {
+      margin-block: 2rem;
       display: inline-block;
       width: 49%;
-      vertical-align: middle;
-      margin: 0 0; }
+      vertical-align: middle; }
     .section-pricing__card li {
       margin-bottom: 10%;
       margin-left: 20%; }
@@ -224,12 +232,16 @@ nav.edge {
     .section-pricing__card__element--inactive {
       list-style-image: url("./../res/png/Cross.png"); }
 
+.section-pricing__card
 .plan-price {
   font-size: xx-large; }
+  .section-pricing__card
   .plan-price--red {
     color: #FB3B64; }
+  .section-pricing__card
   .plan-price--blue {
     color: #07ACE6; }
+  .section-pricing__card
   .plan-price--green {
     color: #55DFB4; }
 
@@ -249,10 +261,16 @@ nav.edge {
   .plan-button--green {
     background-color: #55DFB4; }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
   .section-pricing > div {
     display: flex;
-    flex-direction: row; } }
+    flex-direction: row; }
+
+  .section-pricing__card {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; } }
 .form-contact {
   margin: 9%; }
   .form-contact header {
@@ -300,7 +318,7 @@ nav.edge {
   border: 0;
   box-shadow: 0 4px 20px -6px #08A6E4; }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
   .form-contact {
     display: flex;
     flex-direction: row; }

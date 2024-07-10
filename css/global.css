@@ -9,10 +9,10 @@
   padding: 1.5rem;
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.6); }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1000px) {
   .desktop--none {
     display: none; } }
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 1000px) {
   .mobile--none {
     display: none; } }
 

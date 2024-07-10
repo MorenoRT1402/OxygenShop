@@ -62,7 +62,7 @@ $color : #08A6E4;
     box-shadow: 0 4px 20px -6px $color;
 }
 
-@media screen and (min-width : 600px) {
+@media screen and (min-width : 1000px) {
     .form-contact {
         display: flex;
         flex-direction: row;

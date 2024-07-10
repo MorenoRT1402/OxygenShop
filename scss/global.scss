@@ -14,7 +14,7 @@ $opensans : 'Open Sans', sans-serif;
     box-shadow: 1px 1px 20px rgba(0, 0, 0, .6);
 }
 
-@media screen and (min-width : 600px) {
+@media screen and (min-width : 1000px) {
     .desktop{
         &--none {
             display: none;
@@ -22,7 +22,7 @@ $opensans : 'Open Sans', sans-serif;
     }
 }
 
-@media screen and (max-width : 600px) {
+@media screen and (max-width : 1000px) {
     .mobile {
         &--none {
             display: none;

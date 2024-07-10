@@ -16,7 +16,11 @@ $checkbox : './../res/png/Checkbox.png'; $cross : './../res/png/Cross.png';
         display: inline-block;
         vertical-align: top;
         width: 80%;
-        padding: 4%;
+        padding: 3%;
+
+        &:hover {
+            transform: scale(1.2);
+        }
 
         @mixin cardBorder ($color : $red ) { border: 1px solid $color; border-radius: 18px; }
 
@@ -24,13 +28,19 @@ $checkbox : './../res/png/Checkbox.png'; $cross : './../res/png/Cross.png';
         &--blue { @include cardBorder($blue) }
         &--green { @include cardBorder($green) }
 
+        @mixin hovercolor ($color: $red) { box-shadow: 1px 1px 20px $color;}
+
+        &--red:hover{ @include hovercolor($red) }
+        &--blue:hover{ @include hovercolor($blue) }
+        &--green:hover{ @include hovercolor($green) }
+
         &__plan { font-weight: 700; }
 
         &__div { 
+            margin-block: 2rem;
             display: inline-block; 
             width: 49%;
             vertical-align: middle; 
-            margin: 0 0;
         }
 
         li {
@@ -48,6 +58,8 @@ $checkbox : './../res/png/Checkbox.png'; $cross : './../res/png/Cross.png';
         }
     }
 }
+
+.section-pricing__card
 
 .plan-price {
     font-size: xx-large;
@@ -73,9 +85,18 @@ $checkbox : './../res/png/Checkbox.png'; $cross : './../res/png/Cross.png';
     &--green { @include buttonBg($aquamarine) }
 }
 
-@media screen and (min-width :600px ) {
+@media screen and (min-width :1000px ) {
     .section-pricing > div {
         display: flex;
         flex-direction: row;
+    }
+
+    .section-pricing{
+        &__card {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
     }
 }

@@ -2,14 +2,19 @@
 <html lang="en">
 <head>
     <link rel="stylesheet" type="text/css" href="./../css/styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+
     <meta charset="UTF-8">
     <title>Module 1 HTML & CSS</title>
 </head>
 <body>
     <nav class="edge">
         <header class="title">OXYGENShop</header>
-        <img class= " top-nav__img" src= "./../res/Menu.png" alt=""/>
+        <img class= " top-nav__img" src= "./../res/png/Menu.png" alt=""/>
         <div class="top-nav__menu">
             <span>Why us</span>
             <span>Benefits</span>
@@ -24,27 +29,28 @@
     </article>
 <!--Metrics -->
     <section class="section-metrics">
-        <img class="section-metrics__img" src="./../res/Background 1.png" alt=""></img>
+        <img class="section-metrics__img desktop--none" src="./../res/png/Background 1.png" alt=""></img>
+        <img class="section-metrics__img mobile--none" src="./../res/png/Background.png" alt=""></img>
         <p class="section-metrics__text">The most popular sales platform in country</p>
         
         <div class="section-metrics__div">
             <div class="section-metrics__card">
-                <img src="./../res/Ellipse 1.png" alt=""/>
-                <img class="section-metrics__card__img" src="./../res/Person 2.png" alt=""/>
+                <img src="./../res/png/Ellipse 1.png" alt=""/>
+                <img class="section-metrics__card__img" src="./../res/png/Person 2.png" alt=""/>
                 <p class="section-metrics__card__number">100000+</p>
                 <p class="section-metrics__card__text">daily entries</p>
             </div>
 
             <div class="section-metrics__card">
-                <img src="./../res/Ellipse 2.png" alt=""/>
-                <img class="section-metrics__card__img" src="./../res/Eye 2.png" alt=""/>
+                <img src="./../res/png/Ellipse 2.png" alt=""/>
+                <img class="section-metrics__card__img" src="./../res/png/Eye 2.png" alt=""/>
                 <p class="section-metrics__card__number">2000000+</p>
                 <p class="section-metrics__card__text">seen products every day</p>
             </div>
 
             <div class="section-metrics__card">
-                <img src="./../res/Ellipse Green.png" alt=""/>
-                <img class="section-metrics__card__img" src="./../res/Catalog 2.png" alt=""/>
+                <img src="./../res/png/Ellipse Green.png" alt=""/>
+                <img class="section-metrics__card__img" src="./../res/png/Catalog 2.png" alt=""/>
                 <p class="section-metrics__card__number">10000+</p>
                 <p class="section-metrics__card__text">added posts daily</p>
             </div>
@@ -52,13 +58,14 @@
     </section>
 <!--Section info -->
     <section class="section-info">
-        <article class="section-info__article">
+
+        <article class="section-info__article section-info--reverse">
             <div class="section-info__article__img-container">
-                <img class="section-info__article__bg-img__right" src="./../res/Ellipse 1.png" alt="">
-                <img class="section-info__article__top-img" src="./../res/Macbook.png" alt="">
+                <img class="section-info__article__bg-img__right" src="./../res/png/Ellipse 1.png" alt="">
+                <img class="section-info__article__top-img" src="./../res/png/Macbook.png" alt="">
             </div>
-            <div class="section-info__article__text-container">
-                <p class="section-info__article__headline">Be Always first</p>
+                <div class="section-info__article__text">
+                <p class="section-info__article__headline section-info__article__text">Be Always first</p>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
                     tempor incididunt ut labore et dolore magna aliqua. 
                     Ut enim ad minim veniam.</p>
@@ -67,29 +74,42 @@
 
         <article class="section-info__article">
             <div class="section-info__article__img-container">
-                <img class="section-info__article__bg-img__center" src="./../res/Ellipse 2.png" alt="">
-                <img class="section-info__article__top-img" src="./../res/iPhone.png" alt="">
+                <div class="section-info--right">
+                    <img class="section-info__article__bg-img__center" src="./../res/png/Ellipse 2.png" alt="">
+                    <img class="section-info__article__top-img" src="./../res/png/iPhone.png" alt="">
+                </div>
             </div>
-            <p class="section-info__article__headline">Your shop is where you are!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+            <div>
+            <div">
+                <p class="section-info__article__headline">Your shop is where you are!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
                 tempor incididunt ut labore et dolore magna aliqua. 
                 Ut enim ad minim veniam.</p>
+            </div>
+            </div>
         </article>
 
         <article class="section-info__article">
-            <p class="section-info__article__headline">Increase recognition your brand!</p>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
-                tempor incididunt ut labore et dolore magna aliqua. 
-                Ut enim ad minim veniam.</p>
+            <div>
+            <div class="section-info__article__text section-info--left">
+                <p class="section-info__article__headline">Increase recognition your brand!</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod 
+                    tempor incididunt ut labore et dolore magna aliqua. 
+                    Ut enim ad minim veniam.</p>
+            </div>
+        </div>
             <div class="section-info__article__img-container">
-                <img class="section-info__article__bg-img" src="./../res/Rectangle.png" alt="">
-                <img class="section-info__article__top-img" src="./../res/Trumpet.png" alt="">
+                <div class="section-info--right">
+                <img class="section-info__article__bg-img" src="./../res/png/Rectangle.png" alt="">
+                <img class="section-info__article__top-img--center" src="./../res/png/Trumpet.png" alt="">
+                </div>
             </div>
         </article>
     </section>
 <!--section pricing -->
     <section class="section-pricing">
         <header class="section-pricing__header">Pricing</header>
+        <div>
         <article class="section-pricing__card section-pricing__card--red">
             <div class="section-pricing__card__div">
                 <header class="section-pricing__card__plan">Basic</header>
@@ -142,41 +162,46 @@
             </div>
             <button class="plan-button plan-button--green">Begin</button>
         </article>
+        </div>
     </section>
-
+<!--Form Contact-->
     <form class="form-contact">
+        <section>
         <header>Any questions?</header>
         <p>Leave your email address or call us!</p>
-        <section class="form-contact__data">
-            <div>
-                <img src="./../res/Vector.png" alt=""/>
-                <span>info@bestshop.xyz</span>
-            </div>
-            <div>
-                <img src="./../res/phone-icon.png" alt=""/>
-                <span>123 456 789</span>
-            </div>
+            <section class="form-contact__data">
+                <div>
+                    <img src="./../res/png/Vector.png" alt=""/>
+                    <span>info@bestshop.xyz</span>
+                </div>
+                <div>
+                    <img src="./../res/png/phone-icon.png" alt=""/>
+                    <span>123 456 789</span>
+                </div>
+            </section>
         </section>
 
-        <div class="form-contact__input">
-            <label for="name">NAME</label><br>
-            <input type="text" id="name">
-        </div>
-        <div class="form-contact__input">
-            <label for="email">EMAIL</label><br>
-            <input type="email" id="email">
-        </div>
+        <section>
+            <div class="form-contact__input">
+                <label for="name">NAME</label><br>
+                <input type="text" id="name">
+            </div>
+            <div class="form-contact__input">
+                <label for="email">EMAIL</label><br>
+                <input type="email" id="email">
+            </div>
 
-        <div class="form-contact__terms">
-            <input type="checkbox"/>
-            <span>I hereby give consent for my personal data included in my application 
-                to be processed for the purposes of the recruitment process under the 
-                European Parliament’s and Council of the European Union Regulation on the 
-                Protection of Natural Persons as of 27 April 2016, with regard to the 
-                processing of personal data and on the free movement of such data, and 
-                repealing Directive 95/46/EC (Data Protection Directive)</span>
-        </div>
-        <input class="form-contact__submit" type="submit" value="Send"/>
+            <div class="form-contact__terms">
+                <input type="checkbox"/>
+                <span>I hereby give consent for my personal data included in my application 
+                    to be processed for the purposes of the recruitment process under the 
+                    European Parliament’s and Council of the European Union Regulation on the 
+                    Protection of Natural Persons as of 27 April 2016, with regard to the 
+                    processing of personal data and on the free movement of such data, and 
+                    repealing Directive 95/46/EC (Data Protection Directive)</span>
+            </div>
+            <input class="form-contact__submit" type="submit" value="Send"/>
+        </section>
     </form>
 
     <footer class="edge">
@@ -185,8 +210,8 @@
             <p class="rights">© 2022 OXYGEN, All Rights Reserved</p>
         </div>
         <div class="social">
-            <img src="./../res/Twitter.png" alt="">
-            <img src="./../res/Facebook.png" alt="">
+            <img src="./../res/png/Twitter.png" alt="">
+            <img src="./../res/png/Facebook.png" alt="">
         </div>
     </footer>
     

@@ -7,7 +7,7 @@
   right: 0;
   top: 50%; }
   .top-nav__menu span {
-    margin-inline: 1.2rem; }
+    margin-inline: 1.5rem; }
 
 nav.edge {
   position: relative;
@@ -18,7 +18,10 @@ nav.edge {
 
 @media screen and (min-width: 600px) {
   .top-nav__img {
-    display: none; } }
+    display: none; }
+
+  .top-nav__menu :last-child {
+    margin-right: 4rem; } }
 @media screen and (max-width: 600px) {
   .top-nav__menu {
     display: none; } }

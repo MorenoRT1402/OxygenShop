@@ -1,11 +1,14 @@
 $red : #FB3B64; $crimson : #EB476E; $vividsky : #07ACE6; $blue : #07ACE6; 
 $aquamarine : #55DFB4; $green : #55DFB4;
-$checkbox : './../res/Checkbox.png'; $cross : './../res/Cross.png';
+$checkbox : './../res/png/Checkbox.png'; $cross : './../res/png/Cross.png';
 
 .section-pricing {
     text-align: center;
 
-    &__header { font-style: Raleway; font-weight: 400; font-size: xx-large; }
+    &__header { 
+        font-family: $raleway; font-weight: 400; font-size: xx-large; 
+        margin-top: 2rem; 
+    }
 
     &__card {
         position: relative;
@@ -68,4 +71,11 @@ $checkbox : './../res/Checkbox.png'; $cross : './../res/Cross.png';
     &--red { @include buttonBg($crimson) }
     &--blue { @include buttonBg($vividsky) }
     &--green { @include buttonBg($aquamarine) }
+}
+
+@media screen and (min-width :600px ) {
+    .section-pricing > div {
+        display: flex;
+        flex-direction: row;
+    }
 }

@@ -1,6 +1,6 @@
 .title {
   color: #08A6E4;
-  font-style: Raleway;
+  font-family: "Raleway", sans-serif;
   font-weight: 300;
   font-size: xx-large; }
 
@@ -9,6 +9,12 @@
   padding: 1.5rem;
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.6); }
 
+@media screen and (min-width: 600px) {
+  .desktop--none {
+    display: none; } }
+@media screen and (max-width: 600px) {
+  .mobile--none {
+    display: none; } }
 .top-nav__img {
   position: absolute;
   right: 1.5rem;
@@ -18,7 +24,7 @@
   right: 0;
   top: 50%; }
   .top-nav__menu span {
-    margin-inline: 1.2rem; }
+    margin-inline: 1.5rem; }
 
 nav.edge {
   position: relative;
@@ -29,7 +35,10 @@ nav.edge {
 
 @media screen and (min-width: 600px) {
   .top-nav__img {
-    display: none; } }
+    display: none; }
+
+  .top-nav__menu :last-child {
+    margin-right: 4rem; } }
 @media screen and (max-width: 600px) {
   .top-nav__menu {
     display: none; } }
@@ -48,7 +57,7 @@ nav.edge {
     border-radius: 40px;
     box-shadow: 1px 1px 20px rgba(122, 201, 213, 0.6);
     font-size: large;
-    font-style: Open Sans;
+    font-family: "Open Sans", sans-serif;
     font-weight: 700;
     color: white; }
 
@@ -72,7 +81,7 @@ nav.edge {
       margin-top: .4rem; }
     .section-metrics__card__number {
       margin: 1rem;
-      font-style: Raleway;
+      font-family: "Raleway", sans-serif;
       font-weight: 800;
       size: .5rem;
       letter-spacing: .15rem; }
@@ -80,11 +89,28 @@ nav.edge {
       color: gray; }
 
 @media screen and (min-width: 600px) {
-  .section-metrics > div {
-    column-count: 3; } }
+  .section-metrics__div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; }
+
+    /*
+    .section-metrics {
+        :first-child {
+            display: none;
+        }
+    }
+    .section-metrics__div {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+//        column-count: 3;
+    }
+*/ }
 .section-info {
   padding: 1rem;
-  background-color: #F7F7F7; }
+  background-color: #F7F7F7;
+  text-align: center; }
   .section-info__article {
     padding: 1rem;
     margin: 1rem;
@@ -96,25 +122,77 @@ nav.edge {
       margin-block: 3rem;
       text-align: center; }
     .section-info__article__bg-img__right {
+      position: relative;
       width: 7rem;
-      right: 20rem; }
+      left: 4rem;
+      bottom: 2.5rem; }
     .section-info__article__bg-img__center {
+      position: relative;
       width: 9rem;
-      transform: translate(-25%, -15%); }
+      bottom: 2rem; }
     .section-info__article__top-img {
       position: absolute;
-      left: 25%; }
+      left: 0;
+      transform: translate(40%, 0); }
+      .section-info__article__top-img--center {
+        position: absolute;
+        left: 0; }
     .section-info__article__headline {
-      font-style: Raileway;
+      font-family: "Raleway", sans-serif;
       font-weight: 400;
-      font-size: 2.1rem; }
+      font-size: 2.1rem;
+      margin-bottom: 2rem; }
 
+@media screen and (min-width: 600px) {
+  .section-info {
+    padding: 5rem; }
+    .section-info__article {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center; }
+      .section-info__article__top-img {
+        left: 23rem; }
+        .section-info__article__top-img--center {
+          left: 23rem; }
+    .section-info--reverse {
+      flex-direction: row-reverse; }
+
+    /*
+    .section-info{
+
+        &--right {
+            position: relative;
+            right: 0;
+        }
+
+        &--left {
+            position: absolute;
+            left: 0;
+        }
+
+        &__article {
+            position: relative;
+            column-count: 2;
+
+            &__img-container{
+                width: 100%;
+            }
+
+            &__text {
+                position: relative;
+//                width: 50%;
+            }
+        }
+    }
+        */ }
 .section-pricing {
   text-align: center; }
   .section-pricing__header {
-    font-style: Raleway;
+    font-family: "Raleway", sans-serif;
     font-weight: 400;
-    font-size: xx-large; }
+    font-size: xx-large;
+    margin-top: 2rem; }
   .section-pricing__card {
     position: relative;
     margin: 5%;
@@ -142,9 +220,9 @@ nav.edge {
       margin-bottom: 10%;
       margin-left: 20%; }
     .section-pricing__card__element--active {
-      list-style-image: url("./../res/Checkbox.png"); }
+      list-style-image: url("./../res/png/Checkbox.png"); }
     .section-pricing__card__element--inactive {
-      list-style-image: url("./../res/Cross.png"); }
+      list-style-image: url("./../res/png/Cross.png"); }
 
 .plan-price {
   font-size: xx-large; }
@@ -171,10 +249,14 @@ nav.edge {
   .plan-button--green {
     background-color: #55DFB4; }
 
+@media screen and (min-width: 600px) {
+  .section-pricing > div {
+    display: flex;
+    flex-direction: row; } }
 .form-contact {
   margin: 9%; }
   .form-contact header {
-    font-style: Raleway;
+    font-family: "Raleway", sans-serif;
     font-weight: 400;
     font-size: 3rem; }
   .form-contact__data {
@@ -186,7 +268,7 @@ nav.edge {
         margin-left: 3%;
         height: 100%;
         vertical-align: middle;
-        font-style: 'Open Sans';
+        font-family: "Open Sans", sans-serif;
         font-weight: 600;
         color: #A5A5A5; }
   .form-contact__input {
@@ -195,7 +277,7 @@ nav.edge {
       color: #08A6E4;
       letter-spacing: .25rem;
       font-size: .9rem;
-      font-style: 'Open Sans';
+      font-family: "Open Sans", sans-serif;
       font-weight: 600; }
     .form-contact__input input {
       width: 100%;
@@ -218,9 +300,16 @@ nav.edge {
   border: 0;
   box-shadow: 0 4px 20px -6px #08A6E4; }
 
+@media screen and (min-width: 600px) {
+  .form-contact {
+    display: flex;
+    flex-direction: row; }
+
+  .form-contact > section {
+    width: 50%; } }
 footer .rights {
   font-size: small;
-  font-style: 'Open Sans';
+  font-family: "Open Sans", sans-serif;
   font-weight: 400;
   color: #A5A5A5; }
 footer .social {

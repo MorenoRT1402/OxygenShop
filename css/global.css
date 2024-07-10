@@ -1,6 +1,6 @@
 .title {
   color: #08A6E4;
-  font-style: Raleway;
+  font-family: "Raleway", sans-serif;
   font-weight: 300;
   font-size: xx-large; }
 
@@ -8,5 +8,12 @@
   width: 100%;
   padding: 1.5rem;
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.6); }
+
+@media screen and (min-width: 600px) {
+  .desktop--none {
+    display: none; } }
+@media screen and (max-width: 600px) {
+  .mobile--none {
+    display: none; } }
 
 /*# sourceMappingURL=global.css.map */

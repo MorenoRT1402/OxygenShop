@@ -3,7 +3,7 @@ $color : #08A6E4;
 .form-contact {
     margin: 9%;
     header {
-        font-style: Raleway;
+        font-family: $raleway;
         font-weight: 400;
         font-size: 3rem;
     }
@@ -17,7 +17,8 @@ $color : #08A6E4;
 
             span { 
                 margin-left: 3%; height: 100%; vertical-align: middle;
-                font-style: 'Open Sans'; font-weight: 600;
+                font-family: $opensans;
+                font-weight: 600;
                 color: #A5A5A5;
             }
         }
@@ -29,7 +30,7 @@ $color : #08A6E4;
             color: $color;
             letter-spacing: .25rem;
             font-size: .9rem;
-            font-style: 'Open Sans';
+            font-family: $opensans;
             font-weight: 600;
         }
 
@@ -59,4 +60,15 @@ $color : #08A6E4;
     color: white;
     border: 0;
     box-shadow: 0 4px 20px -6px $color;
+}
+
+@media screen and (min-width : 600px) {
+    .form-contact {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .form-contact > section {
+        width: 50%;
+    }
 }

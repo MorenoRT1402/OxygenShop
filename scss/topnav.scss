@@ -11,7 +11,7 @@
         top: 50%;
 
         span {
-            margin-inline: 1.2rem;
+            margin-inline: 1.5rem;
         }
     }
 }
@@ -29,6 +29,10 @@ nav.edge {
         &__img {
             display: none;
         }
+    }
+
+    .top-nav__menu :last-child {
+        margin-right: 4rem;
     }
 }
 

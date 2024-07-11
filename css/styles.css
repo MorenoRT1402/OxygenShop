@@ -356,9 +356,10 @@ nav.edge {
     font-family: "Open Sans", sans-serif;
     font-weight: 400;
     font-size: 16px;
-    line-height: 22px; }
+    line-height: 22px;
+    margin-block: 1.5rem; }
   .form-contact__data {
-    margin-block: 10%; }
+    margin-bottom: 2.7rem; }
     .form-contact__data div {
       text-align: left; }
       .form-contact__data div span {
@@ -406,6 +407,11 @@ nav.edge {
   .form-contact {
     display: flex;
     flex-direction: row; }
+    .form-contact__data {
+      display: flex;
+      flex-direction: row;
+      gap: 2rem;
+      align-items: center; }
 
   .form-contact > section {
     width: 50%; } }

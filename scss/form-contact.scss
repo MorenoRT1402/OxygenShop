@@ -14,11 +14,13 @@ $color : #08A6E4;
         font-weight: 400;
         font-size: 16px;
         line-height: 22px;
+
+        margin-block: 1.5rem;
     }
 
     &__data {
-        margin-block: 10%;
-
+        margin-bottom: 2.7rem;
+        
         div {
             text-align: left;
 
@@ -81,6 +83,13 @@ $color : #08A6E4;
     .form-contact {
         display: flex;
         flex-direction: row;
+
+        &__data {
+            display: flex;
+            flex-direction: row;
+            gap: 2rem;
+            align-items: center;
+        }
     }
 
     .form-contact > section {

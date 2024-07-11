@@ -4,43 +4,39 @@
     text-align: center;
 
     &__article {
-        padding: 1rem;
-        margin: 1rem;
+        padding-top: 3rem;
+        margin-block: 2.9rem;
         background-color: white;
         text-align: left;
 
         &__img-container {
             position: relative;
-            width: 100%;
-            margin-block: 3rem;
-            text-align: center;
+//            margin-block: 1.9rem;
         }
 
-        &__bg-img {       
+        &__bg-img { 
+            position: relative;
 
             &__right {
-                position: relative;
                 width: 7rem;
-                left: 4rem;
-                bottom: 2.5rem;
+                left: 9rem;
+                bottom: 2.5rem;      
             }
 
-            &__center {
-                position: relative;
+            &--center {
                 width: 9rem;
-                bottom: 2rem;
+                left: 3.5rem;
+                bottom: 1.1rem;
+            }
+
+            &--fill {
+                width: 100%;
             }
         }
 
-        &__top-img {
-            position: absolute;
-            left: 0;
-            transform: translate(40%, 0);
-
-            &--center {
-                position: absolute;
-                left: 0;
-            }
+        &__text {
+            padding: 1.5rem;
+            padding-top: 0;
         }
 
         &__headline {

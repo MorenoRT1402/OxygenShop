@@ -1,21 +1,21 @@
 /*
-Error: Undefined variable: "$opensans".
-        on line 23 of scss/article-open.scss
+Error: Undefined variable: "$raleway".
+        on line 8 of scss/article-open.scss
 
-18:         background-color: #08A6E4;
-19:         border-radius: 40px;
-20:         box-shadow: 1px 1px 20px rgba(122, 201, 213, 0.6);
-21: 
-22:         font-size: large;
-23:         font-family: $opensans;
-24:         font-weight: 700;
-25:         color: white;
-26:     }
-27: }
-28: 
+3:     margin-top: 5rem;
+4: 
+5:     text-align: center;
+6: 
+7:     &__title {
+8:         font-family: $raleway;
+9:         font-weight: 400;
+10:         font-size: xx-large;
+11:     }
+12: 
+13:     &__description {
 
 Backtrace:
-scss/article-open.scss:23
+scss/article-open.scss:8
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
@@ -83,4 +83,4 @@ scss/article-open.scss:23
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$opensans\".\A         on line 23 of scss/article-open.scss\A \A 18:         background-color: #08A6E4;\A 19:         border-radius: 40px;\A 20:         box-shadow: 1px 1px 20px rgba(122, 201, 213, 0.6);\A 21: \A 22:         font-size: large;\A 23:         font-family: $opensans;\A 24:         font-weight: 700;\A 25:         color: white;\A 26:     }\A 27: }\A 28: "; }
+  content: "Error: Undefined variable: \"$raleway\".\A         on line 8 of scss/article-open.scss\A \A 3:     margin-top: 5rem;\A 4: \A 5:     text-align: center;\A 6: \A 7:     &__title {\A 8:         font-family: $raleway;\A 9:         font-weight: 400;\A 10:         font-size: xx-large;\A 11:     }\A 12: \A 13:     &__description {"; }

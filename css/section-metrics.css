@@ -1,35 +1,24 @@
 /*
 Error: Undefined variable: "$raleway".
-        on line 24 of scss/section-metrics.scss
+        on line 7 of scss/section-metrics.scss
 
-19:             margin-top: .4rem;
-20:         }
-21: 
-22:         &__number {
-23:             margin: 1rem;
-24:             font-family: $raleway;
-25:             font-weight: 800;
-26:             size: .5rem;
-27:             letter-spacing: .15rem;
-28:         }
-29: 
+2:     text-align: center;
+3: 
+4:     &__img { width: 100%;}
+5: 
+6:     &__text {
+7:         font-family: $raleway;
+8:         font-size: 2rem;
+9:         font-weight: 300;
+10:         margin: 5%;
+11:     }
+12: 
 
 Backtrace:
-scss/section-metrics.scss:24
+scss/section-metrics.scss:7
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/stack.rb:135:in `with_frame'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/stack.rb:79:in `with_base'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `map'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/base.rb:36:in `visit'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/stack.rb:79:in `block in with_base'
@@ -94,4 +83,4 @@ scss/section-metrics.scss:24
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$raleway\".\A         on line 24 of scss/section-metrics.scss\A \A 19:             margin-top: .4rem;\A 20:         }\A 21: \A 22:         &__number {\A 23:             margin: 1rem;\A 24:             font-family: $raleway;\A 25:             font-weight: 800;\A 26:             size: .5rem;\A 27:             letter-spacing: .15rem;\A 28:         }\A 29: "; }
+  content: "Error: Undefined variable: \"$raleway\".\A         on line 7 of scss/section-metrics.scss\A \A 2:     text-align: center;\A 3: \A 4:     &__img { width: 100%;}\A 5: \A 6:     &__text {\A 7:         font-family: $raleway;\A 8:         font-size: 2rem;\A 9:         font-weight: 300;\A 10:         margin: 5%;\A 11:     }\A 12: "; }

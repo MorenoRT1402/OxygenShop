@@ -5,10 +5,13 @@
     text-align: center;
 
     &__title {
+        font-family: $raleway;
+        font-weight: 400;
         font-size: xx-large;
     }
 
     &__description {
+        font-family: $opensans;
         margin: 2rem;
     }
 
@@ -17,6 +20,7 @@
         height: 4.5rem;
         background-color: #08A6E4;
         border-radius: 40px;
+        border: 0;
         box-shadow: 1px 1px 20px rgba(122, 201, 213, 0.6);
 
         font-size: large;

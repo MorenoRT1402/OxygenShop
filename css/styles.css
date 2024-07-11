@@ -108,6 +108,10 @@ nav.edge {
       size: .5rem;
       letter-spacing: .15rem; }
     .section-metrics__card__text {
+      font-family: "Raleway", sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 19px;
       color: gray;
       margin-inline: 4rem; }
 
@@ -181,13 +185,15 @@ nav.edge {
       flex-direction: row;
       align-items: center;
       justify-content: space-between;
-      padding-top: 5rem; }
+      padding-top: 5rem;
+      margin-inline: 15em; }
       .section-info__article__headline--last {
         padding-top: 6rem; }
       .section-info__article__description {
         font-size: 16px; }
       .section-info__article__text {
-        width: 50%; }
+        width: 50%;
+        padding-block: 0; }
       .section-info__article__img-container {
         right: 0;
         margin-bottom: 0; }
@@ -204,7 +210,8 @@ nav.edge {
         margin-block: 3rem; }
       .section-info__article--last {
         display: flex;
-        justify-content: space-between; }
+        justify-content: space-between;
+        margin-inline: 15em; }
     .section-info--reverse {
       flex-direction: row-reverse;
       padding-right: 15rem; }
@@ -243,14 +250,13 @@ nav.edge {
     font-family: "Raleway", sans-serif;
     font-weight: 400;
     font-size: xx-large;
-    margin-top: 2rem; }
+    margin-top: 3em; }
   .section-pricing__card {
     position: relative;
-    margin: 5%;
+    margin: 4%;
     display: inline-block;
     vertical-align: top;
-    width: 80%;
-    padding: 3%; }
+    width: 80%; }
     .section-pricing__card:hover {
       transform: scale(1.2); }
     .section-pricing__card--red {
@@ -282,7 +288,7 @@ nav.edge {
       margin-bottom: 10%;
       margin-left: 20%;
       text-align: left; }
-    .section-pricing__card__element, .section-pricing__card__element--active {
+    .section-pricing__card__element, .section-pricing__card__element--active, .section-pricing__card__element--inactive {
       font-family: "Open Sans", sans-serif;
       font-weight: 400;
       font-size: 14px;
@@ -290,7 +296,6 @@ nav.edge {
       .section-pricing__card__element--active {
         list-style-image: url("./../res/png/Checkbox.png"); }
       .section-pricing__card__element--inactive {
-        font-family: "Open Sans", sans-serif;
         list-style-image: url("./../res/png/Cross.png"); }
 
 .plan-price {
@@ -311,7 +316,7 @@ nav.edge {
   font-size: 12px;
   line-height: 14.09px; }
 
-.plan-button {
+.plan-button, .plan-button--red, .plan-button--blue, .plan-button--green {
   position: absolute;
   top: 90%;
   left: 25%;
@@ -319,7 +324,11 @@ nav.edge {
   width: 50%;
   height: 20%;
   color: white;
-  border: none; }
+  border: none;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 17.7px; }
   .plan-button--red {
     background-color: #EB476E; }
   .plan-button--blue {
@@ -334,17 +343,14 @@ nav.edge {
 
   .section-pricing__card {
     display: flex;
+    margin-block: 2em;
     flex-direction: column;
     justify-content: center;
     align-items: center; }
 
-  .plan-button {
-    position: absolute;
+  .plan-button, .plan-button--red, .plan-button--blue, .plan-button--green {
     top: 95%;
-    border-radius: 23px;
-    height: 3rem;
-    color: white;
-    border: none; } }
+    height: 3rem; } }
 .form-contact {
   margin: 9%; }
   .form-contact header {
@@ -387,6 +393,7 @@ nav.edge {
     font-weight: 400;
     font-size: 12px;
     line-height: 16.34px;
+    text-align: justify;
     margin-bottom: 2rem; }
 
 .form-contact > p {
@@ -395,23 +402,32 @@ nav.edge {
 .form-contact__submit {
   position: relative;
   left: 30%;
-  width: 70%;
+  width: 18em;
   height: 4rem;
   border-radius: 35px;
   background-color: #08A6E4;
   color: white;
   border: 0;
-  box-shadow: 0 4px 20px -6px #08A6E4; }
+  box-shadow: 0 4px 20px -6px #08A6E4;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 17.7px; }
 
 @media screen and (min-width: 1000px) {
   .form-contact {
     display: flex;
-    flex-direction: row; }
+    flex-direction: row;
+    padding-inline: 12em; }
+    .form-contact header {
+      font-size: 49px; }
     .form-contact__data {
       display: flex;
       flex-direction: row;
       gap: 2rem;
       align-items: center; }
+    .form-contact__submit {
+      left: 60%; }
 
   .form-contact > section {
     width: 50%; } }

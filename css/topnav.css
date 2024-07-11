@@ -8,7 +8,7 @@ Error: Undefined variable: "$opensans".
 14:             margin-inline: 1.5rem;
 15: 
 16:             font-family: $opensans;
-17:             font-weight: 700;
+17:             font-weight: $bold;
 18:             font-size: 11px;
 19:             line-height: 15px;
 20:             letter-spacing: 3.28px;
@@ -94,4 +94,4 @@ scss/topnav.scss:16
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$opensans\".\A         on line 16 of scss/topnav.scss\A \A 11:         top: 50%;\A 12: \A 13:         span {\A 14:             margin-inline: 1.5rem;\A 15: \A 16:             font-family: $opensans;\A 17:             font-weight: 700;\A 18:             font-size: 11px;\A 19:             line-height: 15px;\A 20:             letter-spacing: 3.28px;\A 21:         }"; }
+  content: "Error: Undefined variable: \"$opensans\".\A         on line 16 of scss/topnav.scss\A \A 11:         top: 50%;\A 12: \A 13:         span {\A 14:             margin-inline: 1.5rem;\A 15: \A 16:             font-family: $opensans;\A 17:             font-weight: $bold;\A 18:             font-size: 11px;\A 19:             line-height: 15px;\A 20:             letter-spacing: 3.28px;\A 21:         }"; }

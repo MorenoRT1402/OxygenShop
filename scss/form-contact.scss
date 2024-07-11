@@ -20,7 +20,7 @@ $color : #08A6E4;
 
     &__data {
         margin-bottom: 2.7rem;
-        
+
         div {
             text-align: left;
 
@@ -58,6 +58,7 @@ $color : #08A6E4;
         font-weight: 400;
         font-size: 12px;
         line-height: 16.34px;
+        text-align: justify;
 
         margin-bottom: 2rem;
     }
@@ -70,25 +71,39 @@ $color : #08A6E4;
 .form-contact__submit {
     position: relative;
     left: 30%;
-    width: 70%;
+    width: 18em;
     height: 4rem;
     border-radius: 35px;
     background-color: $color;
     color: white;
     border: 0;
     box-shadow: 0 4px 20px -6px $color;
+
+    font-family: $opensans;
+    font-weight: $bold;
+    font-size: 13px;
+    line-height: 17.7px;
 }
 
 @media screen and (min-width : 1000px) {
     .form-contact {
         display: flex;
         flex-direction: row;
+        padding-inline: 12em;
+
+        header {
+            font-size: 49px;
+        }
 
         &__data {
             display: flex;
             flex-direction: row;
             gap: 2rem;
             align-items: center;
+        }
+
+        &__submit {
+            left: 60%;
         }
     }
 

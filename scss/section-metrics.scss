@@ -29,6 +29,11 @@
         }
 
         &__text { 
+            font-family: $raleway;
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 19px;
+
             color: gray;
             margin-inline: 4rem;
         }

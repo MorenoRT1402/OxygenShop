@@ -7,16 +7,15 @@ $checkbox : './../res/png/Checkbox.png'; $cross : './../res/png/Cross.png';
 
     &__header { 
         font-family: $raleway; font-weight: 400; font-size: xx-large; 
-        margin-top: 2rem; 
+        margin-top: 3em; 
     }
 
     &__card {
         position: relative;
-        margin: 5%;
+        margin: 4%;
         display: inline-block;
         vertical-align: top;
         width: 80%;
-        padding: 3%;
 
         &:hover {
             transform: scale(1.2);
@@ -34,7 +33,7 @@ $checkbox : './../res/png/Checkbox.png'; $cross : './../res/png/Cross.png';
         &--blue:hover{ @include hovercolor($blue) }
         &--green:hover{ @include hovercolor($green) }
 
-        &__plan { font-family: $raleway; font-weight: 700; font-size: 20px; line-height: 24px; }
+        &__plan { font-family: $raleway; font-weight: $bold; font-size: 20px; line-height: 24px; }
 
         &__div { 
             margin-block: 2rem;
@@ -60,7 +59,7 @@ $checkbox : './../res/png/Checkbox.png'; $cross : './../res/png/Cross.png';
                 list-style-image: url($checkbox);
             }
             &--inactive {
-                font-family: $opensans;
+                @extend .section-pricing__card__element;
                 list-style-image: url($cross);
             }
         }
@@ -82,7 +81,7 @@ $checkbox : './../res/png/Checkbox.png'; $cross : './../res/png/Cross.png';
 
 .plan-limited-offer {
     font-family: $raleway;
-    font-weight: 700;
+    font-weight: $bold;
     font-size: 12px;
     line-height: 14.09px;
 }
@@ -95,7 +94,12 @@ $checkbox : './../res/png/Checkbox.png'; $cross : './../res/png/Cross.png';
     color: white;
     border: none;
 
-    @mixin buttonBg($color : $crimson) { background-color: $color; }
+    font-family: $opensans;
+    font-weight: $bold;
+    font-size: 13px;
+    line-height: 17.7px;
+
+    @mixin buttonBg($color : $crimson) { @extend .plan-button; background-color: $color; }
 
     &--red { @include buttonBg($crimson) }
     &--blue { @include buttonBg($vividsky) }
@@ -111,6 +115,7 @@ $checkbox : './../res/png/Checkbox.png'; $cross : './../res/png/Cross.png';
     .section-pricing{
         &__card {
             display: flex;
+            margin-block: 2em;
             flex-direction: column;
             justify-content: center;
             align-items: center;
@@ -118,11 +123,7 @@ $checkbox : './../res/png/Checkbox.png'; $cross : './../res/png/Cross.png';
     }
 
     .plan-button {
-        position: absolute; 
         top: 95%;
-        border-radius: 23px;
         height: 3rem;
-        color: white;
-        border: none;
     }
 }

@@ -77,6 +77,7 @@
             justify-content: space-between;
 
             padding-top: 5rem;
+            margin-inline: 15em;
 
             &__headline {
                 &--last {
@@ -90,6 +91,7 @@
 
             &__text {
                 width: 50%;
+                padding-block: 0;
             }
 
             &__img-container {
@@ -123,6 +125,7 @@
             &--last{
                 display: flex;
                 justify-content: space-between;
+                margin-inline: 15em;
             }
         }
 

@@ -2,7 +2,7 @@
 Error: Undefined variable: "$raleway".
         on line 43 of scss/section-info.scss
 
-38:             padding: 1.5rem;
+38:             padding: 2.2rem;
 39:             padding-top: 0;
 40:         }
 41: 
@@ -12,7 +12,7 @@ Error: Undefined variable: "$raleway".
 45:             font-size: 2.1rem;
 46:             margin-bottom: 2rem;
 47:         }
-48:     }
+48: 
 
 Backtrace:
 scss/section-info.scss:43
@@ -94,4 +94,4 @@ scss/section-info.scss:43
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$raleway\".\A         on line 43 of scss/section-info.scss\A \A 38:             padding: 1.5rem;\A 39:             padding-top: 0;\A 40:         }\A 41: \A 42:         &__headline {\A 43:             font-family: $raleway;\A 44:             font-weight: 400;\A 45:             font-size: 2.1rem;\A 46:             margin-bottom: 2rem;\A 47:         }\A 48:     }"; }
+  content: "Error: Undefined variable: \"$raleway\".\A         on line 43 of scss/section-info.scss\A \A 38:             padding: 2.2rem;\A 39:             padding-top: 0;\A 40:         }\A 41: \A 42:         &__headline {\A 43:             font-family: $raleway;\A 44:             font-weight: 400;\A 45:             font-size: 2.1rem;\A 46:             margin-bottom: 2rem;\A 47:         }\A 48: "; }

@@ -34,7 +34,7 @@ $checkbox : './../res/png/Checkbox.png'; $cross : './../res/png/Cross.png';
         &--blue:hover{ @include hovercolor($blue) }
         &--green:hover{ @include hovercolor($green) }
 
-        &__plan { font-weight: 700; }
+        &__plan { font-family: $raleway; font-weight: 700; font-size: 20px; line-height: 24px; }
 
         &__div { 
             margin-block: 2rem;
@@ -46,28 +46,45 @@ $checkbox : './../res/png/Checkbox.png'; $cross : './../res/png/Cross.png';
         li {
             margin-bottom: 10%;
             margin-left: 20%;
+            text-align: left;
         }
 
         &__element {
+            font-family: $opensans;
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 19.07px;
+
             &--active {
+                @extend .section-pricing__card__element;
                 list-style-image: url($checkbox);
             }
             &--inactive {
+                @extend .section-pricing__card__element;
                 list-style-image: url($cross);
             }
         }
     }
 }
 
-.section-pricing__card
 
 .plan-price {
-    font-size: xx-large;
+    font-family: $opensans;
+    font-weight: 300;
+    font-size: 46px;
+    line-height: 64px;
 
     @mixin planPrice ($color : $red ) { color: $color; }
     &--red { @include planPrice($red) }
     &--blue { @include planPrice($blue) }
     &--green { @include planPrice($green) }
+}
+
+.plan-limited-offer {
+    font-family: $raleway;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 14.09px;
 }
 
 .plan-button {

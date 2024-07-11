@@ -9,10 +9,10 @@ Error: Undefined variable: "$raleway".
 5:     header {
 6:         font-family: $raleway;
 7:         font-weight: 400;
-8:         font-size: 3rem;
-9:     }
-10: 
-11:     &__data {
+8:         font-size: 40px;
+9:         line-height: 46.96px;
+10:     }
+11: 
 
 Backtrace:
 scss/form-contact.scss:6
@@ -83,4 +83,4 @@ scss/form-contact.scss:6
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$raleway\".\A         on line 6 of scss/form-contact.scss\A \A 1: $color : #08A6E4;\A 2: \A 3: .form-contact {\A 4:     margin: 9%;\A 5:     header {\A 6:         font-family: $raleway;\A 7:         font-weight: 400;\A 8:         font-size: 3rem;\A 9:     }\A 10: \A 11:     &__data {"; }
+  content: "Error: Undefined variable: \"$raleway\".\A         on line 6 of scss/form-contact.scss\A \A 1: $color : #08A6E4;\A 2: \A 3: .form-contact {\A 4:     margin: 9%;\A 5:     header {\A 6:         font-family: $raleway;\A 7:         font-weight: 400;\A 8:         font-size: 40px;\A 9:         line-height: 46.96px;\A 10:     }\A 11: "; }

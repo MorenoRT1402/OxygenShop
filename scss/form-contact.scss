@@ -5,20 +5,28 @@ $color : #08A6E4;
     header {
         font-family: $raleway;
         font-weight: 400;
-        font-size: 3rem;
+        font-size: 40px;
+        line-height: 46.96px;
+    }
+
+    &__subheader {
+        font-family: $opensans;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
     }
 
     &__data {
         margin-block: 10%;
 
         div {
-            column-count: 2;
             text-align: left;
 
             span { 
-                margin-left: 3%; height: 100%; vertical-align: middle;
+                margin-left: .3rem;
                 font-family: $opensans;
                 font-weight: 600;
+                font-size: 16px;
                 color: #A5A5A5;
             }
         }
@@ -28,13 +36,15 @@ $color : #08A6E4;
         margin-bottom: 2rem;
         label {
             color: $color;
-            letter-spacing: .25rem;
-            font-size: .9rem;
             font-family: $opensans;
             font-weight: 600;
+            font-size: 11px;
+            line-height: 14.98px;
+            letter-spacing: 3.28px;
         }
 
         input {
+            margin-top: 1rem;
             width: 100%;
             border: 0;
             border-bottom: .1rem solid #95989A;
@@ -42,6 +52,11 @@ $color : #08A6E4;
     }
 
     &__terms {
+        font-family: $opensans;
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 16.34px;
+
         margin-bottom: 2rem;
     }
 }

@@ -11,7 +11,7 @@
 
         &__img-container {
             position: relative;
-//            margin-block: 1.9rem;
+            margin-bottom: 2rem;
         }
 
         &__bg-img { 
@@ -35,7 +35,7 @@
         }
 
         &__text {
-            padding: 1.5rem;
+            padding: 2.2rem;
             padding-top: 0;
         }
 
@@ -44,6 +44,11 @@
             font-weight: 400;
             font-size: 2.1rem;
             margin-bottom: 2rem;
+        }
+
+        &__description {
+            font-family: $opensans;
+            font-size: 14px;
         }
     }
 }

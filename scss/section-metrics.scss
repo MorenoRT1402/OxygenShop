@@ -5,9 +5,9 @@
 
     &__text {
         font-family: $raleway;
-        font-size: 2rem;
-        font-weight: 300;
-        margin: 5%;
+        font-weight: 400;
+        font-size: 36px;
+        line-height: 42px;
     }
 
     &__card {
@@ -30,7 +30,7 @@
 
         &__text { 
             color: gray;
-            margin-inline: 1rem;
+            margin-inline: 4rem;
         }
     }
 }

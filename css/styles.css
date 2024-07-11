@@ -186,6 +186,8 @@ nav.edge {
       .section-info__article__bg-img__right {
         width: 16rem;
         bottom: 4rem; }
+      .section-info__article__bg-img--center {
+        width: 20rem; }
       .section-info__article__top-img {
         left: 23rem; }
         .section-info__article__top-img--center {

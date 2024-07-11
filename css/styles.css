@@ -96,7 +96,7 @@ nav.edge {
     line-height: 42px; }
   .section-metrics__card {
     position: relative;
-    margin: 20%; }
+    margin-block: 9rem; }
     .section-metrics__card__img {
       position: absolute;
       left: 50%;
@@ -116,6 +116,8 @@ nav.edge {
     display: flex;
     flex-direction: row;
     justify-content: center; }
+  .section-metrics__card {
+    margin-inline: 4rem; }
 
     /*
     .section-metrics {

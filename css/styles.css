@@ -136,6 +136,8 @@ nav.edge {
   padding: 1rem;
   background-color: #F7F7F7;
   text-align: center; }
+  .section-info--left {
+    padding-top: 2rem; }
   .section-info__article {
     padding-top: 3rem;
     margin-block: 2.9rem;
@@ -157,13 +159,16 @@ nav.edge {
       .section-info__article__bg-img--fill {
         width: 100%; }
     .section-info__article__text {
+      background-color: white;
       padding: 2.2rem;
       padding-top: 0; }
-    .section-info__article__headline {
+    .section-info__article__headline, .section-info__article__headline--last {
       font-family: "Raleway", sans-serif;
       font-weight: 400;
       font-size: 2.1rem;
       margin-bottom: 2rem; }
+      .section-info__article__headline--last {
+        padding-top: 2rem; }
     .section-info__article__description {
       font-family: "Open Sans", sans-serif;
       font-size: 14px; }
@@ -177,12 +182,15 @@ nav.edge {
       align-items: center;
       justify-content: space-between;
       padding-top: 5rem; }
+      .section-info__article__headline--last {
+        padding-top: 6rem; }
       .section-info__article__description {
         font-size: 16px; }
       .section-info__article__text {
         width: 50%; }
       .section-info__article__img-container {
-        right: 0; }
+        right: 0;
+        margin-bottom: 0; }
       .section-info__article__bg-img__right {
         width: 16rem;
         bottom: 4rem; }
@@ -194,6 +202,9 @@ nav.edge {
           left: 23rem; }
       .section-info__article__vector {
         margin-block: 3rem; }
+      .section-info__article--last {
+        display: flex;
+        justify-content: space-between; }
     .section-info--reverse {
       flex-direction: row-reverse;
       padding-right: 15rem; }

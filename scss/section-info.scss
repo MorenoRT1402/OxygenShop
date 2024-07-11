@@ -3,6 +3,10 @@
     background-color: #F7F7F7;
     text-align: center;
 
+    &--left {
+        padding-top: 2rem;
+    }
+
     &__article {
         padding-top: 3rem;
         margin-block: 2.9rem;
@@ -37,6 +41,7 @@
         }
 
         &__text {
+            background-color: white;
             padding: 2.2rem;
             padding-top: 0;
         }
@@ -46,6 +51,11 @@
             font-weight: 400;
             font-size: 2.1rem;
             margin-bottom: 2rem;
+
+            &--last {
+                @extend .section-info__article__headline;
+                padding-top: 2rem;
+            }
         }
 
         &__description {
@@ -68,6 +78,12 @@
 
             padding-top: 5rem;
 
+            &__headline {
+                &--last {
+                    padding-top: 6rem;
+                }
+            }
+
             &__description {
                 font-size: 16px;
             }
@@ -78,6 +94,7 @@
 
             &__img-container {
                 right: 0;
+                margin-bottom: 0;
             }
 
             &__bg-img {     
@@ -101,6 +118,11 @@
 
             &__vector {
                 margin-block: 3rem;
+            }
+
+            &--last{
+                display: flex;
+                justify-content: space-between;
             }
         }
 

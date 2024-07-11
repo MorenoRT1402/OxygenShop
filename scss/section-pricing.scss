@@ -60,7 +60,7 @@ $checkbox : './../res/png/Checkbox.png'; $cross : './../res/png/Cross.png';
                 list-style-image: url($checkbox);
             }
             &--inactive {
-                @extend .section-pricing__card__element;
+                font-family: $opensans;
                 list-style-image: url($cross);
             }
         }
@@ -115,5 +115,14 @@ $checkbox : './../res/png/Checkbox.png'; $cross : './../res/png/Cross.png';
             justify-content: center;
             align-items: center;
         }
+    }
+
+    .plan-button {
+        position: absolute; 
+        top: 95%;
+        border-radius: 23px;
+        height: 3rem;
+        color: white;
+        border: none;
     }
 }

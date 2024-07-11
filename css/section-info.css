@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$raleway".
-        on line 43 of scss/section-info.scss
+        on line 45 of scss/section-info.scss
 
-38:             padding: 2.2rem;
-39:             padding-top: 0;
-40:         }
-41: 
-42:         &__headline {
-43:             font-family: $raleway;
-44:             font-weight: 400;
-45:             font-size: 2.1rem;
-46:             margin-bottom: 2rem;
-47:         }
-48: 
+40:             padding: 2.2rem;
+41:             padding-top: 0;
+42:         }
+43: 
+44:         &__headline {
+45:             font-family: $raleway;
+46:             font-weight: 400;
+47:             font-size: 2.1rem;
+48:             margin-bottom: 2rem;
+49:         }
+50: 
 
 Backtrace:
-scss/section-info.scss:43
+scss/section-info.scss:45
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
@@ -94,4 +94,4 @@ scss/section-info.scss:43
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$raleway\".\A         on line 43 of scss/section-info.scss\A \A 38:             padding: 2.2rem;\A 39:             padding-top: 0;\A 40:         }\A 41: \A 42:         &__headline {\A 43:             font-family: $raleway;\A 44:             font-weight: 400;\A 45:             font-size: 2.1rem;\A 46:             margin-bottom: 2rem;\A 47:         }\A 48: "; }
+  content: "Error: Undefined variable: \"$raleway\".\A         on line 45 of scss/section-info.scss\A \A 40:             padding: 2.2rem;\A 41:             padding-top: 0;\A 42:         }\A 43: \A 44:         &__headline {\A 45:             font-family: $raleway;\A 46:             font-weight: 400;\A 47:             font-size: 2.1rem;\A 48:             margin-bottom: 2rem;\A 49:         }\A 50: "; }

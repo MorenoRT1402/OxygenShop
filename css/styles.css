@@ -144,11 +144,11 @@ nav.edge {
     .section-info__article__img-container {
       position: relative;
       margin-bottom: 2rem; }
-    .section-info__article__bg-img {
+    .section-info__article__bg-img, .section-info__article__bg-img__right, .section-info__article__bg-img--center {
       position: relative; }
       .section-info__article__bg-img__right {
         width: 7rem;
-        left: 9rem;
+        left: 11rem;
         bottom: 2.5rem; }
       .section-info__article__bg-img--center {
         width: 9rem;
@@ -175,13 +175,26 @@ nav.edge {
       display: flex;
       flex-direction: row;
       align-items: center;
-      justify-content: center; }
+      justify-content: space-between;
+      padding-top: 5rem; }
+      .section-info__article__description {
+        font-size: 16px; }
+      .section-info__article__text {
+        width: 50%; }
+      .section-info__article__img-container {
+        right: 0; }
+      .section-info__article__bg-img__right {
+        width: 16rem;
+        bottom: 4rem; }
       .section-info__article__top-img {
         left: 23rem; }
         .section-info__article__top-img--center {
           left: 23rem; }
+      .section-info__article__vector {
+        margin-block: 3rem; }
     .section-info--reverse {
-      flex-direction: row-reverse; }
+      flex-direction: row-reverse;
+      padding-right: 15rem; }
 
     /*
     .section-info{
@@ -256,7 +269,7 @@ nav.edge {
       margin-bottom: 10%;
       margin-left: 20%;
       text-align: left; }
-    .section-pricing__card__element, .section-pricing__card__element--active, .section-pricing__card__element--inactive {
+    .section-pricing__card__element, .section-pricing__card__element--active {
       font-family: "Open Sans", sans-serif;
       font-weight: 400;
       font-size: 14px;
@@ -264,6 +277,7 @@ nav.edge {
       .section-pricing__card__element--active {
         list-style-image: url("./../res/png/Checkbox.png"); }
       .section-pricing__card__element--inactive {
+        font-family: "Open Sans", sans-serif;
         list-style-image: url("./../res/png/Cross.png"); }
 
 .plan-price {
@@ -309,7 +323,15 @@ nav.edge {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center; } }
+    align-items: center; }
+
+  .plan-button {
+    position: absolute;
+    top: 95%;
+    border-radius: 23px;
+    height: 3rem;
+    color: white;
+    border: none; } }
 .form-contact {
   margin: 9%; }
   .form-contact header {

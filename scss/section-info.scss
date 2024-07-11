@@ -18,12 +18,14 @@
             position: relative;
 
             &__right {
+                @extend .section-info__article__bg-img;
                 width: 7rem;
-                left: 9rem;
+                left: 11rem;
                 bottom: 2.5rem;      
             }
 
             &--center {
+                @extend .section-info__article__bg-img;
                 width: 9rem;
                 left: 3.5rem;
                 bottom: 1.1rem;
@@ -53,6 +55,7 @@
     }
 }
 
+// Desktop
 @media screen and (min-width : 1000px) {
     .section-info {
         padding: 5rem;
@@ -61,7 +64,28 @@
             display: flex;
             flex-direction: row;
             align-items: center;
-            justify-content: center;
+            justify-content: space-between;
+
+            padding-top: 5rem;
+
+            &__description {
+                font-size: 16px;
+            }
+
+            &__text {
+                width: 50%;
+            }
+
+            &__img-container {
+                right: 0;
+            }
+
+            &__bg-img {     
+                &__right {
+                    width: 16rem;
+                    bottom: 4rem;
+                }
+            }
 
             &__top-img {
                 left: 23rem;
@@ -70,10 +94,15 @@
                     left: 23rem;
                 }
             }
+
+            &__vector {
+                margin-block: 3rem;
+            }
         }
 
         &--reverse{
             flex-direction: row-reverse;
+            padding-right: 15rem;
         }
     }
     /*

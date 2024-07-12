@@ -2,7 +2,7 @@
 Error: Undefined variable: "$raleway".
         on line 8 of scss/article-open.scss
 
-3:     margin-top: 5rem;
+3:     margin-top: 8.5em;
 4: 
 5:     text-align: center;
 6: 
@@ -83,4 +83,4 @@ scss/article-open.scss:8
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$raleway\".\A         on line 8 of scss/article-open.scss\A \A 3:     margin-top: 5rem;\A 4: \A 5:     text-align: center;\A 6: \A 7:     &__title {\A 8:         font-family: $raleway;\A 9:         font-weight: 400;\A 10:         font-size: xx-large;\A 11:     }\A 12: \A 13:     &__description {"; }
+  content: "Error: Undefined variable: \"$raleway\".\A         on line 8 of scss/article-open.scss\A \A 3:     margin-top: 8.5em;\A 4: \A 5:     text-align: center;\A 6: \A 7:     &__title {\A 8:         font-family: $raleway;\A 9:         font-weight: 400;\A 10:         font-size: xx-large;\A 11:     }\A 12: \A 13:     &__description {"; }

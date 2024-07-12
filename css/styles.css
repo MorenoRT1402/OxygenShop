@@ -4,7 +4,7 @@
   font-weight: 300;
   font-size: xx-large; }
 
-.edge {
+.edge, nav.edge {
   width: 100%;
   padding: 1.5rem;
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.6); }
@@ -21,36 +21,42 @@
   .center__down {
     top: .5rem; }
 
+.inactive {
+  display: none; }
+
 @media screen and (min-width: 1000px) {
   .desktop--none {
     display: none; } }
 @media screen and (max-width: 1000px) {
   .mobile--none {
     display: none; } }
-.top-nav__img {
-  position: absolute;
-  right: 1.5rem;
-  top: 2.5rem; }
-.top-nav__menu {
-  position: absolute;
-  right: 0;
-  top: 50%; }
-  .top-nav__menu span {
-    margin-inline: 1.5rem;
-    font-family: "Open Sans", sans-serif;
-    font-weight: 700;
-    font-size: 11px;
-    line-height: 15px;
-    letter-spacing: 3.28px;
-    color: #A5A5A5; }
-    .top-nav__menu span:hover {
-      color: black; }
+.top-nav {
+  position: fixed;
+  z-index: 999; }
+  .top-nav__img {
+    position: absolute;
+    right: 1.5rem;
+    top: 2.5rem; }
+  .top-nav__menu {
+    position: absolute;
+    right: 0;
+    top: 50%; }
+    .top-nav__menu span {
+      margin-inline: 1.5rem;
+      font-family: "Open Sans", sans-serif;
+      font-weight: 700;
+      font-size: 11px;
+      line-height: 15px;
+      letter-spacing: 3.28px;
+      color: #A5A5A5; }
+      .top-nav__menu span:hover {
+        color: black; }
 
 nav.edge {
-  position: relative;
-  width: 100%;
-  padding: 1.5rem;
-  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.6);
+  position: absolute;
+  top: 0;
+  display: flex;
+  flex-direction: column;
   column-count: 2; }
 
 @media screen and (min-width: 1000px) {
@@ -67,10 +73,15 @@ nav.edge {
     margin-right: 4rem; } }
 @media screen and (max-width: 1000px) {
   .top-nav__menu {
-    display: none; } }
+    display: none;
+    position: relative;
+    max-width: 50%;
+    margin-top: 3em; }
+    .top-nav__menu span {
+      margin-inline-start: 0; } }
 .article-open {
   margin: 1rem;
-  margin-top: 5rem;
+  margin-top: 8.5em;
   text-align: center; }
   .article-open__title {
     font-family: "Raleway", sans-serif;

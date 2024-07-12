@@ -32,6 +32,10 @@ $bold : 700;
     }
 }
 
+.inactive {
+    display: none;
+}
+
 @media screen and (min-width : 1000px) {
     .desktop{
         &--none {

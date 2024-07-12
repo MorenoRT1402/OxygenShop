@@ -1,4 +1,7 @@
 .top-nav {
+    position: fixed;
+    z-index: 999;
+
     &__img {
         position: absolute;
         right: 1.5rem;
@@ -29,10 +32,11 @@
 }
 
 nav.edge {
-    position: relative;
-    width: 100%;
-    padding: 1.5rem;
-    box-shadow: 1px 1px 20px rgba(0, 0, 0, .6);
+    position: absolute;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    @extend .edge;
     column-count: 2;
 }
 
@@ -61,5 +65,12 @@ nav.edge {
 @media screen and (max-width : 1000px) {
     .top-nav__menu {
         display: none;
+        position: relative;
+        max-width: 50%;
+        margin-top: 3em;
+
+        span {
+            margin-inline-start: 0;
+        }
     }
 }

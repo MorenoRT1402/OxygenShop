@@ -9,10 +9,10 @@ Error: Undefined variable: "$raleway".
 8:     &__header { 
 9:         font-family: $raleway; font-weight: 400; font-size: xx-large; 
 10:         margin-top: 3em; 
-11:     }
-12: 
-13:     &__card {
-14:         position: relative;
+11:         margin-bottom: 2em;
+12:     }
+13: 
+14:     &__card {
 
 Backtrace:
 scss/section-pricing.scss:9
@@ -83,4 +83,4 @@ scss/section-pricing.scss:9
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$raleway\".\A         on line 9 of scss/section-pricing.scss\A \A 4: \A 5: .section-pricing {\A 6:     text-align: center;\A 7: \A 8:     &__header { \A 9:         font-family: $raleway; font-weight: 400; font-size: xx-large; \A 10:         margin-top: 3em; \A 11:     }\A 12: \A 13:     &__card {\A 14:         position: relative;"; }
+  content: "Error: Undefined variable: \"$raleway\".\A         on line 9 of scss/section-pricing.scss\A \A 4: \A 5: .section-pricing {\A 6:     text-align: center;\A 7: \A 8:     &__header { \A 9:         font-family: $raleway; font-weight: 400; font-size: xx-large; \A 10:         margin-top: 3em; \A 11:         margin-bottom: 2em;\A 12:     }\A 13: \A 14:     &__card {"; }

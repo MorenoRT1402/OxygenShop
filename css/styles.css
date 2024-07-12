@@ -253,7 +253,8 @@ nav.edge {
     font-family: "Raleway", sans-serif;
     font-weight: 400;
     font-size: xx-large;
-    margin-top: 3em; }
+    margin-top: 3em;
+    margin-bottom: 2em; }
   .section-pricing__card {
     position: relative;
     margin: 4%;

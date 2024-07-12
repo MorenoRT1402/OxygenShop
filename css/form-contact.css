@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$raleway".
-        on line 6 of scss/form-contact.scss
+        on line 7 of scss/form-contact.scss
 
-1: $color : #08A6E4;
-2: 
-3: .form-contact {
-4:     margin: 9%;
-5:     header {
-6:         font-family: $raleway;
-7:         font-weight: 400;
-8:         font-size: 40px;
-9:         line-height: 46.96px;
-10:     }
-11: 
+2: $form-contact-margin : 1.5em;
+3: 
+4: .form-contact {
+5:     margin: 9%;
+6:     &__header {
+7:         font-family: $raleway;
+8:         font-weight: 400;
+9:         font-size: 40px;
+10:         line-height: 46.96px;
+11:     }
+12: 
 
 Backtrace:
-scss/form-contact.scss:6
+scss/form-contact.scss:7
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
@@ -83,4 +83,4 @@ scss/form-contact.scss:6
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$raleway\".\A         on line 6 of scss/form-contact.scss\A \A 1: $color : #08A6E4;\A 2: \A 3: .form-contact {\A 4:     margin: 9%;\A 5:     header {\A 6:         font-family: $raleway;\A 7:         font-weight: 400;\A 8:         font-size: 40px;\A 9:         line-height: 46.96px;\A 10:     }\A 11: "; }
+  content: "Error: Undefined variable: \"$raleway\".\A         on line 7 of scss/form-contact.scss\A \A 2: $form-contact-margin : 1.5em;\A 3: \A 4: .form-contact {\A 5:     margin: 9%;\A 6:     &__header {\A 7:         font-family: $raleway;\A 8:         font-weight: 400;\A 9:         font-size: 40px;\A 10:         line-height: 46.96px;\A 11:     }\A 12: "; }

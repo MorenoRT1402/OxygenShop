@@ -356,7 +356,7 @@ nav.edge {
     height: 3rem; } }
 .form-contact {
   margin: 9%; }
-  .form-contact header {
+  .form-contact__header {
     font-family: "Raleway", sans-serif;
     font-weight: 400;
     font-size: 40px;
@@ -366,7 +366,7 @@ nav.edge {
     font-weight: 400;
     font-size: 16px;
     line-height: 22px;
-    margin-block: 1.5rem; }
+    margin-bottom: 1.5em; }
   .form-contact__data {
     margin-bottom: 2.7rem; }
     .form-contact__data div {
@@ -421,19 +421,23 @@ nav.edge {
   .form-contact {
     display: flex;
     flex-direction: row;
-    padding-inline: 12em; }
-    .form-contact header {
+    justify-content: center; }
+    .form-contact__header {
       font-size: 49px; }
+    .form-contact__subheader {
+      margin-block: 1.5em; }
     .form-contact__data {
       display: flex;
       flex-direction: row;
       gap: 2rem;
       align-items: center; }
+    .form-contact__form {
+      width: 30%; }
     .form-contact__submit {
       left: 60%; }
 
   .form-contact > section {
-    width: 50%; } }
+    width: 30%; } }
 footer .rights {
   font-size: small;
   font-family: "Open Sans", sans-serif;

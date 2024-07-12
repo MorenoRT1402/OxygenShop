@@ -41,6 +41,10 @@ $checkbox : './../res/png/Checkbox.png'; $cross : './../res/png/Cross.png';
             display: inline-block; 
             width: 49%;
             vertical-align: middle; 
+
+            &>ul{
+                padding-inline-end: .21em;
+            }
         }
 
         li {
@@ -105,6 +109,22 @@ $checkbox : './../res/png/Checkbox.png'; $cross : './../res/png/Cross.png';
     &--red { @include buttonBg($crimson) }
     &--blue { @include buttonBg($vividsky) }
     &--green { @include buttonBg($aquamarine) }
+}
+
+@media screen and (min-width : 1000px) {
+    .section-pricing{
+        &__card {
+            li{
+                margin-left: 36%;
+            }
+
+            &__div{
+                &>ul {
+                    padding-inline-end: 0;
+                }
+            }
+        }
+    }
 }
 
 @media screen and (max-width: 1000px) {

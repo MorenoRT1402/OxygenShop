@@ -306,6 +306,8 @@ nav.edge {
       display: inline-block;
       width: 49%;
       vertical-align: middle; }
+      .section-pricing__card__div > ul {
+        padding-inline-end: .21em; }
     .section-pricing__card li {
       margin-bottom: 10%;
       margin-left: 20%;
@@ -358,6 +360,11 @@ nav.edge {
   .plan-button--green {
     background-color: #55DFB4; }
 
+@media screen and (min-width: 1000px) {
+  .section-pricing__card li {
+    margin-left: 36%; }
+  .section-pricing__card__div > ul {
+    padding-inline-end: 0; } }
 @media screen and (max-width: 1000px) {
   .section-pricing__card {
     margin-bottom: 3em; } }

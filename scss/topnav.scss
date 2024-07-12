@@ -41,6 +41,16 @@ nav.edge {
         &__img {
             display: none;
         }
+
+        &__menu {
+            span:hover{
+                color: black;
+                text-decoration: underline;
+                text-decoration-color: #08A6E4;
+                text-underline-offset: 1.5rem;
+                text-decoration-thickness: 0.25rem;
+            }
+        }
     }
 
     .top-nav__menu :last-child {

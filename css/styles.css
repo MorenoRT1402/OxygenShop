@@ -56,6 +56,12 @@ nav.edge {
 @media screen and (min-width: 1000px) {
   .top-nav__img {
     display: none; }
+  .top-nav__menu span:hover {
+    color: black;
+    text-decoration: underline;
+    text-decoration-color: #08A6E4;
+    text-underline-offset: 1.5rem;
+    text-decoration-thickness: 0.25rem; }
 
   .top-nav__menu :last-child {
     margin-right: 4rem; } }
@@ -340,6 +346,9 @@ nav.edge {
   .plan-button--green {
     background-color: #55DFB4; }
 
+@media screen and (max-width: 1000px) {
+  .section-pricing__card {
+    margin-bottom: 3em; } }
 @media screen and (min-width: 1000px) {
   .section-pricing__cards-div {
     display: flex;
@@ -447,12 +456,15 @@ footer .rights {
 footer .social {
   position: absolute;
   vertical-align: middle;
-  right: 10%;
+  right: 3%;
   transform: translateY(-150%);
   text-align: right; }
   footer .social img {
-    margin-inline: .5rem; }
+    margin-inline: .2em; }
 
+@media screen and (min-width: 1000px) {
+  .social {
+    right: 10%; } }
 * {
   box-sizing: border-box;
   margin: 0;

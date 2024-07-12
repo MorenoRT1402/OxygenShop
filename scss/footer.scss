@@ -10,13 +10,19 @@ footer {
     .social {
         position: absolute;
         vertical-align: middle;
-        right: 10%;
+        right: 3%;
         transform: translateY(-150%);
         text-align: right;
 
         img {
-            margin-inline: .5rem;
+            margin-inline: .2em;
         }
     }
 
+}
+
+@media screen and (min-width : 1000px) {
+    .social{
+        right: 10%;
+    }
 }

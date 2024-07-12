@@ -57,7 +57,8 @@ nav.edge {
   top: 0;
   display: flex;
   flex-direction: column;
-  column-count: 2; }
+  column-count: 2;
+  background-color: white; }
 
 @media screen and (min-width: 1000px) {
   .top-nav__img {
@@ -476,6 +477,13 @@ footer .social {
 @media screen and (min-width: 1000px) {
   .social {
     right: 10%; } }
+.scrollbar {
+  position: relative;
+  width: 50%;
+  top: 5.3em;
+  height: 0.5em;
+  background-color: #08a6e4; }
+
 * {
   box-sizing: border-box;
   margin: 0;

@@ -41,7 +41,10 @@
     font-weight: 700;
     font-size: 11px;
     line-height: 15px;
-    letter-spacing: 3.28px; }
+    letter-spacing: 3.28px;
+    color: #A5A5A5; }
+    .top-nav__menu span:hover {
+      color: black; }
 
 nav.edge {
   position: relative;

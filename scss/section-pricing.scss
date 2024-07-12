@@ -107,7 +107,7 @@ $checkbox : './../res/png/Checkbox.png'; $cross : './../res/png/Cross.png';
 }
 
 @media screen and (min-width :1000px ) {
-    .section-pricing > div {
+    .section-pricing__cards-div {
         display: flex;
         flex-direction: row;
     }

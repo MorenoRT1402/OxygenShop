@@ -340,7 +340,7 @@ nav.edge {
     background-color: #55DFB4; }
 
 @media screen and (min-width: 1000px) {
-  .section-pricing > div {
+  .section-pricing__cards-div {
     display: flex;
     flex-direction: row; }
 

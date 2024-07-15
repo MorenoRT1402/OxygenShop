@@ -4,6 +4,7 @@ $checkbox : './../res/png/Checkbox.png'; $cross : './../res/png/Cross.png';
 
 .section-pricing {
     text-align: center;
+    margin-bottom: 4rem;
 
     &__header { 
         font-family: $raleway; font-weight: 400; font-size: xx-large; 

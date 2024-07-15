@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$raleway".
-        on line 9 of scss/section-pricing.scss
+        on line 10 of scss/section-pricing.scss
 
-4: 
 5: .section-pricing {
 6:     text-align: center;
-7: 
-8:     &__header { 
-9:         font-family: $raleway; font-weight: 400; font-size: xx-large; 
-10:         margin-top: 3em; 
-11:         margin-bottom: 2em;
-12:     }
-13: 
-14:     &__card {
+7:     margin-bottom: 4rem;
+8: 
+9:     &__header { 
+10:         font-family: $raleway; font-weight: 400; font-size: xx-large; 
+11:         margin-top: 3em; 
+12:         margin-bottom: 2em;
+13:     }
+14: 
+15:     &__card {
 
 Backtrace:
-scss/section-pricing.scss:9
+scss/section-pricing.scss:10
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
@@ -83,4 +83,4 @@ scss/section-pricing.scss:9
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$raleway\".\A         on line 9 of scss/section-pricing.scss\A \A 4: \A 5: .section-pricing {\A 6:     text-align: center;\A 7: \A 8:     &__header { \A 9:         font-family: $raleway; font-weight: 400; font-size: xx-large; \A 10:         margin-top: 3em; \A 11:         margin-bottom: 2em;\A 12:     }\A 13: \A 14:     &__card {"; }
+  content: "Error: Undefined variable: \"$raleway\".\A         on line 10 of scss/section-pricing.scss\A \A 5: .section-pricing {\A 6:     text-align: center;\A 7:     margin-bottom: 4rem;\A 8: \A 9:     &__header { \A 10:         font-family: $raleway; font-weight: 400; font-size: xx-large; \A 11:         margin-top: 3em; \A 12:         margin-bottom: 2em;\A 13:     }\A 14: \A 15:     &__card {"; }

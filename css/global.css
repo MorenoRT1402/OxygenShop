@@ -21,6 +21,14 @@
   .center__down {
     top: .5rem; }
 
+.left {
+  right: auto;
+  left: 0; }
+
+.right {
+  right: 0;
+  left: auto; }
+
 .inactive {
   display: none; }
 

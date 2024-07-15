@@ -21,6 +21,14 @@
   .center__down {
     top: .5rem; }
 
+.left {
+  right: auto;
+  left: 0; }
+
+.right {
+  right: 0;
+  left: auto; }
+
 .inactive {
   display: none; }
 
@@ -267,7 +275,8 @@ nav.edge {
     }
         */ }
 .section-pricing {
-  text-align: center; }
+  text-align: center;
+  margin-bottom: 4rem; }
   .section-pricing__header {
     font-family: "Raleway", sans-serif;
     font-weight: 400;
@@ -509,6 +518,32 @@ footer .social {
   text-align: center;
   font-size: x-large; }
 
+.slider {
+  position: relative;
+  width: 100%;
+  height: 20rem;
+  display: flex;
+  background-color: black; }
+  .slider__arrow {
+    height: 15%;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    margin-inline: 1em;
+    background-color: transparent;
+    border: 0; }
+    .slider__arrow img {
+      width: 100%;
+      height: 100%; }
+  .slider__img-container {
+    width: 100%;
+    height: 60%;
+    margin: auto; }
+    .slider__img-container img {
+      width: 100%;
+      height: 100%; }
+
 .popup {
   position: fixed;
   display: block;
@@ -518,6 +553,8 @@ footer .social {
   border-radius: 14px;
   background-color: #08a6e4;
   text-align: center; }
+  .popup--inactive {
+    display: none; }
   .popup button {
     position: absolute;
     right: 0;

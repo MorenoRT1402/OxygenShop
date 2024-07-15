@@ -33,6 +33,16 @@ $theme: #08a6e4;
     }
 }
 
+.left {
+    right: auto;
+    left: 0;
+}
+
+.right {
+    right: 0;
+    left: auto;
+}
+
 .inactive {
     display: none;
 }

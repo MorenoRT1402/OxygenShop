@@ -1,6 +1,7 @@
 .top-nav {
     position: fixed;
     z-index: 999;
+    bottom: auto;
 
     &__img {
         position: absolute;

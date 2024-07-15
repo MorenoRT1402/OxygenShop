@@ -32,7 +32,8 @@
     display: none; } }
 .top-nav {
   position: fixed;
-  z-index: 999; }
+  z-index: 999;
+  bottom: auto; }
   .top-nav__img {
     position: absolute;
     right: 1.5rem;

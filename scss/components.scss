@@ -35,7 +35,7 @@
     background-color: black;
 
     &__arrow {
-        height: 15%;
+        height: 3rem;
         position: absolute;
         top: 0;
         bottom: 0;
@@ -128,5 +128,9 @@
 @media screen and (min-width : 1000px) {
     .popup{
         width: 33%;
+    }
+
+    .slider{
+        height: 70rem;
     }
 }

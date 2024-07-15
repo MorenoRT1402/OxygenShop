@@ -111,22 +111,6 @@ $checkbox : './../res/png/Checkbox.png'; $cross : './../res/png/Cross.png';
     &--green { @include buttonBg($aquamarine) }
 }
 
-@media screen and (min-width : 1000px) {
-    .section-pricing{
-        &__card {
-            li{
-                margin-left: 36%;
-            }
-
-            &__div{
-                &>ul {
-                    padding-inline-end: 0;
-                }
-            }
-        }
-    }
-}
-
 @media screen and (max-width: 1000px) {
     .section-pricing{
         &__card{
@@ -139,6 +123,8 @@ $checkbox : './../res/png/Checkbox.png'; $cross : './../res/png/Cross.png';
     .section-pricing__cards-div {
         display: flex;
         flex-direction: row;
+
+        margin-top: 1.2rem;
     }
 
     .section-pricing{
@@ -148,6 +134,16 @@ $checkbox : './../res/png/Checkbox.png'; $cross : './../res/png/Cross.png';
             flex-direction: column;
             justify-content: center;
             align-items: center;
+
+            li{
+                margin-left: 36%;
+            }
+        }
+
+        &__div{
+            &>ul {
+                padding-inline-end: 0;
+            }
         }
     }
 

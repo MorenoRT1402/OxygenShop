@@ -3,7 +3,7 @@
     width: 50%;
     top: 5.3em;
     height: 0.5em;
-    background-color: #08a6e4;
+    background-color: $theme;
 }
 
 .return-to-top{
@@ -17,5 +17,77 @@
 
     img {
         width: 100%;
+    }
+}
+
+.select-currency{
+    width: 25%;
+    height: 2rem;
+    text-align: center;
+    font-size: x-large;
+}
+
+.popup{
+    position: fixed;
+    display: block;
+    width: 80%;
+    max-height: 25%;
+    padding: .3em;
+    border-radius: 14px;
+    background-color: $theme;
+    text-align: center;
+
+
+    button {
+        position: absolute;
+        right: 0;
+        font-size: xx-large;
+        margin-right: 1%;
+        border: transparent;
+        background-color: transparent;
+        color: white;
+    }
+
+    h2{
+        position: relative;
+        color: white;
+    }
+
+    form{
+        display: block;
+        margin-block: 2em;
+
+        label {
+            display: block;
+            color: white;
+        }
+
+        #popup__input-email{
+            border-bottom: 1px solid white;
+            color: $theme;
+            font-size: large;
+
+            &::placeholder{
+                color: gray;
+            }
+        }
+
+        #popup__button{
+            border-radius: 14px;
+            padding: 1em;
+            background-color: white;
+            color: $theme;
+            font-weight: $bold;
+        }
+
+        input {
+            border: 0;
+        }
+    }
+}
+
+@media screen and (min-width : 1000px) {
+    .popup{
+        width: 33%;
     }
 }

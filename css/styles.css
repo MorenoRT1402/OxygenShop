@@ -492,6 +492,17 @@ footer .social {
   height: 0.5em;
   background-color: #08a6e4; }
 
+.return-to-top {
+  border: transparent;
+  background-color: transparent;
+  width: 2em;
+  position: fixed;
+  z-index: 50;
+  bottom: 1em;
+  right: 1em; }
+  .return-to-top img {
+    width: 100%; }
+
 * {
   box-sizing: border-box;
   margin: 0;

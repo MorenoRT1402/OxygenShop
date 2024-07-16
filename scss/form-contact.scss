@@ -1,4 +1,5 @@
 $color : #08A6E4;
+$valid-color : #95989A; $invalid-color : red;
 $form-contact-margin : 1.5em;
 
 .form-contact {
@@ -37,6 +38,11 @@ $form-contact-margin : 1.5em;
 
     &__input {
         margin-bottom: 2rem;
+
+        &--invalid {
+            border-bottom: 1px solid red;
+        }
+
         label {
             color: $color;
             font-family: $opensans;
@@ -46,11 +52,18 @@ $form-contact-margin : 1.5em;
             letter-spacing: 3.28px;
         }
 
-        input {
+        &__value {
+            @mixin valid($color : #95989A){
+                @extend .form-contact__input__value;
+                border-bottom: .1rem solid $color;
+            }
+
             margin-top: 1rem;
             width: 100%;
             border: 0;
-            border-bottom: .1rem solid #95989A;
+
+            &--valid { @include valid($valid-color) }
+            &--invalid { @include valid($invalid-color) }
         }
     }
 

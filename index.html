@@ -210,7 +210,7 @@
         </div>
     </section>
     
-    <section class="form-contact">
+    <section class="form-contact" id="form-contact">
         <section>
         <header>
             <h2 class="form-contact__header">Any questions?</h2>
@@ -230,15 +230,15 @@
     <form class="form-contact__form">
         <div class="form-contact__input">
             <label for="name">NAME</label><br>
-            <input type="text" id="name">
+            <input class="form-contact__input__value--valid" type="text" id="name" name="name">
         </div>
         <div class="form-contact__input">
             <label for="email">EMAIL</label><br>
-            <input type="email" id="email">
+            <input class="form-contact__input__value--valid" type="email" id="email" name="email">
         </div>
 
         <div class="form-contact__terms">
-            <input type="checkbox"/>
+            <input type="checkbox" name="checkbox"/>
             <span>I hereby give consent for my personal data included in my application 
                 to be processed for the purposes of the recruitment process under the 
                 European Parliament’s and Council of the European Union Regulation on the 
@@ -281,5 +281,6 @@
     <script src="./js/hamburger_menu.js"></script>
     <script src="./js/percentage_scroller.js"></script>
     <script src="./js/return_to_top.js"></script>
+    <script src="./js/validate_form.js"></script>
 </body>
 </html>

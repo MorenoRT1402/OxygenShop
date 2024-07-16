@@ -1,21 +1,21 @@
 /*
 Error: Undefined variable: "$opensans".
-        on line 20 of scss/topnav.scss
+        on line 23 of scss/topnav.scss
 
-15:         top: 50%;
-16: 
-17:         span {
-18:             margin-inline: 1.5rem;
+18:         top: 50%;
 19: 
-20:             font-family: $opensans;
-21:             font-weight: $bold;
-22:             font-size: 11px;
-23:             line-height: 15px;
-24:             letter-spacing: 3.28px;
-25: 
+20:         span {
+21:             margin-inline: 1.5rem;
+22: 
+23:             font-family: $opensans;
+24:             font-weight: $bold;
+25:             font-size: 11px;
+26:             line-height: 15px;
+27:             letter-spacing: 3.28px;
+28: 
 
 Backtrace:
-scss/topnav.scss:20
+scss/topnav.scss:23
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/tree/variable.rb:49:in `_perform'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/script/tree/node.rb:50:in `perform'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
@@ -77,17 +77,21 @@ scss/topnav.scss:20
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `each'
 /usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:294:in `watch'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin.rb:109:in `method_missing'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:354:in `watch_or_update'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/exec/sass_scss.rb:51:in `process_result'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/exec/base.rb:50:in `parse'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/exec/base.rb:18:in `parse!'
-/usr/share/rubygems-integration/all/gems/sass-3.7.4/bin/sass:8:in `<top (required)>'
-/usr/bin/sass:25:in `load'
-/usr/bin/sass:25:in `<main>'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:449:in `on_file_changed'
+/usr/share/rubygems-integration/all/gems/sass-3.7.4/lib/sass/plugin/compiler.rb:320:in `block in watch'
+/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/event/config.rb:28:in `call'
+/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/event/processor.rb:117:in `block in _process_changes'
+/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/thread.rb:26:in `rescue_and_log'
+/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/event/processor.rb:116:in `_process_changes'
+/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/event/processor.rb:25:in `block in loop_for'
+/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/event/processor.rb:20:in `loop'
+/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/event/processor.rb:20:in `loop_for'
+/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/event/loop.rb:85:in `_process_changes'
+/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/event/loop.rb:51:in `block in start'
+/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/thread.rb:26:in `rescue_and_log'
+/usr/share/rubygems-integration/all/gems/listen-3.7.0/lib/listen/thread.rb:18:in `block in new'
 */
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$opensans\".\A         on line 20 of scss/topnav.scss\A \A 15:         top: 50%;\A 16: \A 17:         span {\A 18:             margin-inline: 1.5rem;\A 19: \A 20:             font-family: $opensans;\A 21:             font-weight: $bold;\A 22:             font-size: 11px;\A 23:             line-height: 15px;\A 24:             letter-spacing: 3.28px;\A 25: "; }
+  content: "Error: Undefined variable: \"$opensans\".\A         on line 23 of scss/topnav.scss\A \A 18:         top: 50%;\A 19: \A 20:         span {\A 21:             margin-inline: 1.5rem;\A 22: \A 23:             font-family: $opensans;\A 24:             font-weight: $bold;\A 25:             font-size: 11px;\A 26:             line-height: 15px;\A 27:             letter-spacing: 3.28px;\A 28: "; }

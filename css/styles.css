@@ -45,7 +45,9 @@
   .top-nav__img {
     position: absolute;
     right: 1.5rem;
-    top: 2.5rem; }
+    top: 2.5rem;
+    border: 0;
+    background-color: transparent; }
   .top-nav__menu {
     position: absolute;
     right: 0;

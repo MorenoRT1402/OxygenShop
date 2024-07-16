@@ -15,9 +15,13 @@
     <header class="top-nav center">
         <nav class="edge">
             <h1 class="title">OXYGENShop</h1>
-            <img class= " top-nav__img" src= "./res/png/Menu.png" alt="Menu-"/>
-            <img class="inactive" src="./res/png/Frame 14.png" alt="Frame-">
-            <div class="top-nav__menu">
+            <button class= "top-nav__img" id="hamburger">
+                <img src= "./res/png/Menu.png" alt="Menu-"/>
+            </button>
+            <button class="inactive top-nav__img" id="close-hamburger">
+                <img src="./res/png/Frame 14.png" alt="Frame-">
+            </button>
+            <div class="top-nav__menu" id="displayed-menu">
                 <span>WHY US</span>
                 <span>BENEFITS</span>
                 <span>PRICES</span>
@@ -274,5 +278,6 @@
         </div>
     </footer>
     
+    <script src="./js/hamburger_menu.js"></script>
 </body>
 </html>

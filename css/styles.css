@@ -32,6 +32,9 @@
 .inactive {
   display: none; }
 
+.invalid {
+  border: 2px solid red; }
+
 @media screen and (min-width: 1000px) {
   .desktop--none {
     display: none; } }
@@ -438,12 +441,26 @@ nav.edge {
       .form-contact__input__value--invalid {
         border-bottom: 0.1rem solid red; }
   .form-contact__terms {
-    font-family: "Open Sans", sans-serif;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 16.34px;
-    text-align: justify;
     margin-bottom: 2rem; }
+    .form-contact__terms span {
+      font-family: "Open Sans", sans-serif;
+      font-weight: 400;
+      font-size: 12px;
+      line-height: 16.34px;
+      text-align: justify; }
+    .form-contact__terms__input, .form-contact__terms__input--invalid {
+      appearance: none;
+      width: 1rem;
+      height: 1rem;
+      border: 1px solid gray; }
+      .form-contact__terms__input--invalid {
+        border-color: red; }
+
+.form-contact__terms__input:checked, .form-contact__terms__input--invalid:checked {
+  background-image: url("./../res/png/Checkmark.png");
+  background-repeat: no-repeat;
+  background-size: .75rem;
+  background-position: center; }
 
 .form-contact > p {
   font-size: large; }

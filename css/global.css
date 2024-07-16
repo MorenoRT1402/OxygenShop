@@ -32,6 +32,9 @@
 .inactive {
   display: none; }
 
+.invalid {
+  border: 2px solid red; }
+
 @media screen and (min-width: 1000px) {
   .desktop--none {
     display: none; } }

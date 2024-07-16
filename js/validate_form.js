@@ -36,6 +36,14 @@ const validateForm = event => {
 
     const email = event.target.elements['email'];
     validation(email, emailValid);
+
+    //Checkbox
+    const checkbox = event.target.elements['checkbox'];
+    const INVALID_CHECKBOX = 'form-contact__terms__input--invalid';
+    if(!checkbox.checked)
+        checkbox.classList.add(INVALID_CHECKBOX);
+    else checkbox.classList.remove(INVALID_CHECKBOX);
+
 }
 
 form.addEventListener('submit', event => {

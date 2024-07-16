@@ -68,14 +68,36 @@ $form-contact-margin : 1.5em;
     }
 
     &__terms {
-        font-family: $opensans;
-        font-weight: 400;
-        font-size: 12px;
-        line-height: 16.34px;
-        text-align: justify;
+        span {
+            font-family: $opensans;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 16.34px;
+            text-align: justify;
+        }
+
 
         margin-bottom: 2rem;
+
+        &__input{
+            appearance: none;
+            width: 1rem;
+            height: 1rem;
+            border: 1px solid gray;
+
+            &--invalid {
+                @extend .form-contact__terms__input;
+                border-color: red;
+            }
+        }
     }
+}
+
+.form-contact__terms__input:checked{
+    background-image: url('./../res/png/Checkmark.png');
+    background-repeat: no-repeat;
+    background-size: .75rem;
+    background-position: center;
 }
 
 .form-contact > p {

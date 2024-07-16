@@ -1,5 +1,11 @@
 const currencySelector = document.getElementById('currency-selector');
 
+const currencySymbols = {
+    eur: "€",
+    usd: "$",
+    gbp: "£",
+  };
+
 const getCurrencyChanges = () => {
     const api = 'https://cdn.jsdelivr.net/npm/@fawazahmed0/currency-api@latest/v1/currencies/eur.json';
 
@@ -8,9 +14,7 @@ const getCurrencyChanges = () => {
             if (!response.ok) {
                 throw new Error("Failed to fetch exchange rates");
             }
-            const resJSON = response.json();
-            console.log(resJSON);
-            return resJSON;
+            return response.json();
         })
         .then(data => data.eur)
         .catch(error => {
@@ -20,7 +24,15 @@ const getCurrencyChanges = () => {
 }
 
 const updatePrices = (currencyChanges, selectedCurrency) => {
-    console.log(currencyChanges, selectedCurrency);
+    const pricesInEur = [0, 25, 60];
+    const changeRate = currencyChanges[selectedCurrency];
+
+    const priceTexts = document.querySelectorAll('.plan-price');
+    priceTexts.forEach(( planPrice, index) => {
+        const updatedPrice = pricesInEur[index] * changeRate;
+        const normalizedPrice = updatedPrice % 1 == 0 ? updatedPrice : updatedPrice.toFixed(2);
+        planPrice.textContent = `${currencySymbols[selectedCurrency]}${normalizedPrice}`;
+    });
 }
 
 currencySelector.addEventListener('change', event => {

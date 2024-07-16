@@ -32,9 +32,7 @@ const validateForm = event => {
 
     const name = event.target.elements['name'];
     const nameIsValid = validation(name, nameValid);
-    console.log(nameIsValid);
     if(!nameIsValid) validationString = validationString.concat(`+ Name must contain between ${MIN_CHARS} and ${MAX_CHARS} letters \n`);
-    console.log(validationString);
 
     //Email Validation
     const emailValid = email => {

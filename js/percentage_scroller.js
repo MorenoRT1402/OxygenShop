@@ -8,5 +8,3 @@ const updateProgressBar = () => {
 window.addEventListener ('scroll', () => {
     updateProgressBar();
 });
-
-console.log(scroller);

@@ -6,7 +6,7 @@ const updateProgressBar = () => {
 }
 
 window.addEventListener ('scroll', () => {
-    requestAnimationFrame(updateProgressBar());
+    updateProgressBar();
 });
 
 console.log(scroller);

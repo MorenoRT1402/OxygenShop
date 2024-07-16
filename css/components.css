@@ -4,7 +4,7 @@ Error: Undefined variable: "$theme".
 
 1: .scrollbar{
 2:     position: relative;
-3:     width: 50%;
+3:     width: 0%;
 4:     top: 5.3em;
 5:     height: 0.5em;
 6:     background-color: $theme;
@@ -72,4 +72,4 @@ scss/components.scss:6
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$theme\".\A         on line 6 of scss/components.scss\A \A 1: .scrollbar{\A 2:     position: relative;\A 3:     width: 50%;\A 4:     top: 5.3em;\A 5:     height: 0.5em;\A 6:     background-color: $theme;\A 7: }\A 8: \A 9: .return-to-top{\A 10:     border: transparent;\A 11:     background-color: transparent;"; }
+  content: "Error: Undefined variable: \"$theme\".\A         on line 6 of scss/components.scss\A \A 1: .scrollbar{\A 2:     position: relative;\A 3:     width: 0%;\A 4:     top: 5.3em;\A 5:     height: 0.5em;\A 6:     background-color: $theme;\A 7: }\A 8: \A 9: .return-to-top{\A 10:     border: transparent;\A 11:     background-color: transparent;"; }

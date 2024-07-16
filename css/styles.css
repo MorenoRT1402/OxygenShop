@@ -498,7 +498,7 @@ footer .social {
     right: 10%; } }
 .scrollbar {
   position: relative;
-  width: 50%;
+  width: 0%;
   top: 5.3em;
   height: 0.5em;
   background-color: #08a6e4; }

@@ -2,6 +2,9 @@ const BASE_CLASS = 'form-contact__input__value';
 const VALID_MOD = '--valid'; const INVALID_MOD = '--invalid';
 const form = document.getElementById('form-contact');
 
+const MIN_CHARS = 2; const MAX_CHARS = 100;
+
+
 const changeClass = (Element, valid) => {
     if(valid){ 
         Element.classList.add(BASE_CLASS+VALID_MOD);
@@ -14,19 +17,24 @@ const changeClass = (Element, valid) => {
 }
 
 const validateForm = event => {
+    let validationString = '';
     const validation = (Element, validationFn) => {
+        const isValid = validationFn(Element.value);
         changeClass(Element, validationFn(Element.value));
+        return isValid;
     };
 
     // Name Validation
     const nameValid = name => {
-        const MIN_CHARS = 2; const MAX_CHARS = 100;
         const numPattern = /\d/;
         return !(name.length < MIN_CHARS || name.length > MAX_CHARS || numPattern.test(name));
     }
 
     const name = event.target.elements['name'];
-    validation(name, nameValid);
+    const nameIsValid = validation(name, nameValid);
+    console.log(nameIsValid);
+    if(!nameIsValid) validationString = validationString.concat(`+ Name must contain between ${MIN_CHARS} and ${MAX_CHARS} letters \n`);
+    console.log(validationString);
 
     //Email Validation
     const emailValid = email => {
@@ -35,19 +43,24 @@ const validateForm = event => {
     }
 
     const email = event.target.elements['email'];
-    validation(email, emailValid);
+    const emailIsValid = validation(email, emailValid);
+    if(!emailIsValid) validationString = validationString.concat('+ Enter a valid email \n');
 
     //Checkbox
     const checkbox = event.target.elements['checkbox'];
     const INVALID_CHECKBOX = 'form-contact__terms__input--invalid';
-    if(!checkbox.checked)
+    if(!checkbox.checked){
         checkbox.classList.add(INVALID_CHECKBOX);
-    else checkbox.classList.remove(INVALID_CHECKBOX);
+        validationString = validationString.concat('+ Mark the checkbox'); 
+    } else {
+        checkbox.classList.remove(INVALID_CHECKBOX); 
+    }
 
+    if(!nameIsValid || !emailIsValid || !checkbox.checked){
+        alert(validationString);
+        return false;
+    }
+    return true;
 }
 
-form.addEventListener('submit', event => {
-    event.preventDefault();
-
-    validateForm(event);
-})
+window.validateForm = validateForm;

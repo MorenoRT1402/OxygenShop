@@ -14,6 +14,11 @@ const changeClass = (Element, valid) => {
 }
 
 const validateForm = event => {
+    const validation = (Element, validationFn) => {
+        changeClass(Element, validationFn(Element.value));
+    };
+
+    // Name Validation
     const nameValid = name => {
         const MIN_CHARS = 2; const MAX_CHARS = 100;
         const numPattern = /\d/;
@@ -21,7 +26,16 @@ const validateForm = event => {
     }
 
     const name = event.target.elements['name'];
-    changeClass(name, nameValid(name.value));
+    validation(name, nameValid);
+
+    //Email Validation
+    const emailValid = email => {
+        const emailPattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+        return emailPattern.test(email);
+    }
+
+    const email = event.target.elements['email'];
+    validation(email, emailValid);
 }
 
 form.addEventListener('submit', event => {

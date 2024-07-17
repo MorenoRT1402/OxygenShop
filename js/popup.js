@@ -11,6 +11,6 @@ const show = () => {
 setTimeout(show, 5000);
 
 window.addEventListener('scroll', () => {
-    if(getPercentageScrolled() >= 25) 
+    if(getPercentageScrolled() >= 25)
         show();
 })

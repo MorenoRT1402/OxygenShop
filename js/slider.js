@@ -21,6 +21,15 @@ class Slider {
         this.points[this.imgIndex].classList.toggle('current');
     }
 
+    addListeners(){
+        document.getElementById('slider__arrow--left').addEventListener('click', () => {
+            this.move(-1);
+        })
+        document.getElementById('slider__arrow--right').addEventListener('click', () => {
+            this.move(1);
+        })
+    }
+
     updateSlider(){
         const currentImg = `${imagesPath}${images[this.imgIndex]}`;
         this.imgDisplayer.src = currentImg;
@@ -40,6 +49,7 @@ class Slider {
     initSlider(){
         this.createImgSummaries();
         this.updateSlider();
+        this.addListeners();
     }
 
     move(displacement){
@@ -47,7 +57,7 @@ class Slider {
 
         this.imgIndex += displacement;
         if(this.imgIndex >= images.length) this.imgIndex = 0;
-        if(this.imgIndex < 0) this.imgIndex = images.length -1;
+        else if(this.imgIndex < 0) this.imgIndex = images.length -1;
 
         this.updateSlider();
     }

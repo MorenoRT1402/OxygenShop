@@ -93,10 +93,12 @@
     max-height: 25%;
     padding: .3em;
     border-radius: 14px;
+    border:1px solid white;
     background-color: $theme;
     text-align: center;
 
     &--inactive{
+        @extend .popup;
        display: none;
     }
 

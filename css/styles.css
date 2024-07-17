@@ -585,18 +585,19 @@ footer .social {
       .slider__images-summary__button--current {
         background-color: white; }
 
-.popup {
+.popup, .popup--inactive {
   position: fixed;
   display: block;
   width: 80%;
   max-height: 25%;
   padding: .3em;
   border-radius: 14px;
+  border: 1px solid white;
   background-color: #08a6e4;
   text-align: center; }
   .popup--inactive {
     display: none; }
-  .popup button {
+  .popup button, .popup--inactive button {
     position: absolute;
     right: 0;
     font-size: xx-large;
@@ -604,32 +605,32 @@ footer .social {
     border: transparent;
     background-color: transparent;
     color: white; }
-  .popup h2 {
+  .popup h2, .popup--inactive h2 {
     position: relative;
     color: white; }
-  .popup form {
+  .popup form, .popup--inactive form {
     display: block;
     margin-block: 2em; }
-    .popup form label {
+    .popup form label, .popup--inactive form label {
       display: block;
       color: white; }
-    .popup form #popup__input-email {
+    .popup form #popup__input-email, .popup--inactive form #popup__input-email {
       border-bottom: 1px solid white;
       color: #08a6e4;
       font-size: large; }
-      .popup form #popup__input-email::placeholder {
+      .popup form #popup__input-email::placeholder, .popup--inactive form #popup__input-email::placeholder {
         color: gray; }
-    .popup form #popup__button {
+    .popup form #popup__button, .popup--inactive form #popup__button {
       border-radius: 14px;
       padding: 1em;
       background-color: white;
       color: #08a6e4;
       font-weight: 700; }
-    .popup form input {
+    .popup form input, .popup--inactive form input {
       border: 0; }
 
 @media screen and (min-width: 1000px) {
-  .popup {
+  .popup, .popup--inactive {
     width: 33%; }
 
   .slider {

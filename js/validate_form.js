@@ -35,13 +35,8 @@ const validateForm = event => {
     if(!nameIsValid) validationString = validationString.concat(`+ Name must contain between ${MIN_CHARS} and ${MAX_CHARS} letters \n`);
 
     //Email Validation
-    const emailValid = email => {
-        const emailPattern = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-        return emailPattern.test(email);
-    }
-
     const email = event.target.elements['email'];
-    const emailIsValid = validation(email, emailValid);
+    const emailIsValid = validation(email, window.emailValid);
     if(!emailIsValid) validationString = validationString.concat('+ Enter a valid email \n');
 
     //Checkbox
@@ -60,5 +55,3 @@ const validateForm = event => {
     }
     return true;
 }
-
-window.validateForm = validateForm;

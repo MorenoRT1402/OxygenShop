@@ -196,17 +196,12 @@
             <img src="./res/png/left_arrow.png" alt="left_arrow-">
         </button>
         <div class="slider__img-container">
-            <img src="./res/jpg/iso-republic-coneflower-bee-bright.jpg" alt="iso-republic-coneflower-bee-bright-">
-            <img class="inactive" src="./res/jpg/iso-republic-monochrome-horse-portrait.jpg" alt="iso-republic-monochrome-horse-portrait-">
-            <img class="inactive" src="./res/jpg/iso-republic-rainbow_birds.jpg" alt="iso-republic-rainbow_birds-">    
+            <img id="slider__img-displayer" src="./res/jpg/iso-republic-coneflower-bee-bright.jpg" alt="iso-republic-coneflower-bee-bright-">
         </div>
         <button class="slider__arrow right" id="slider__arrow--right">
             <img  src="./res/png/right_arrow.png" alt="right_arrow-">
         </button>
-        <div class="slider__images-summary absolute center">
-            <button class="slider__images-summary__button--current"></button>
-            <button class="slider__images-summary__button"></button>
-            <button class="slider__images-summary__button"></button>
+        <div class="slider__images-summary absolute center" id="slider__img-summary">
         </div>
     </section>
     
@@ -286,5 +281,6 @@
     <script src="./js/send_data.js"></script>
     <script src="./js/currency_change.js"></script>
     <script src="./js/popup.js"></script>
+    <script src="./js/slider.js"></script>
 </body>
 </html>

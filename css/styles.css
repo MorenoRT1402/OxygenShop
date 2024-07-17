@@ -575,13 +575,13 @@ footer .social {
     height: 15%;
     gap: .5rem;
     top: auto; }
-    .slider__images-summary__button, .slider__images-summary__button--current {
+    .slider__images-summary__button {
       width: .8rem;
       height: .8rem;
       border: none;
       border-radius: 200px;
       background-color: gray; }
-      .slider__images-summary__button--current {
+      .slider__images-summary__button.current {
         background-color: white; }
 
 .popup, .popup--inactive {
@@ -630,7 +630,7 @@ footer .social {
 
   .slider {
     height: 70rem; }
-    .slider__images-summary__button, .slider__images-summary__button--current {
+    .slider__images-summary__button {
       width: 2rem;
       height: 2rem; } }
 * {

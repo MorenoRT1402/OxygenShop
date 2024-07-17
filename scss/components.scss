@@ -78,8 +78,7 @@
             border-radius: 200px;
             background-color: gray;
 
-            &--current{
-                @extend .slider__images-summary__button;
+            &.current{
                 background-color: white;
             }
         }

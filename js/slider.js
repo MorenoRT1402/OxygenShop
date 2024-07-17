@@ -8,12 +8,15 @@ const images = [
 
 class Slider {
 
+    autoSlide = setInterval(() => this.move(1), 5000);
+
     constructor(mainID){
         this.img = `${imagesPath}${images[mainID]}`;
         this.imgDisplayer = document.getElementById('slider__img-displayer');
         this.imgIndex = mainID;
         this.imgSummaryContainer = document.getElementById('slider__img-summary');
         this.points = [];
+        this.auto = this.autoSlide;
         this.initSlider();
     }
 
@@ -21,12 +24,18 @@ class Slider {
         this.points[this.imgIndex].classList.toggle('current');
     }
 
+    manualMove(displacement){
+        clearInterval(this.auto);
+        this.move(displacement);
+        this.auto = setInterval(() => this.move(1), 5000);
+    }
+
     addListeners(){
         document.getElementById('slider__arrow--left').addEventListener('click', () => {
-            this.move(-1);
+            this.manualMove(-1);
         })
         document.getElementById('slider__arrow--right').addEventListener('click', () => {
-            this.move(1);
+            this.manualMove(1);
         })
     }
 

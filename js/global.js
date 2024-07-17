@@ -7,5 +7,3 @@ const getPercentageScrolled = () => {
     const scrollablePixels = document.body.scrollHeight - window.innerHeight;
     return window.scrollY / scrollablePixels * 100;
 }
-
-window.emailValid = emailValid;

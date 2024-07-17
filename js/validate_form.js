@@ -1,5 +1,5 @@
 const BASE_CLASS = 'form-contact__input__value';
-const VALID_MOD = '--valid'; const INVALID_MOD = '--invalid';
+const INVALID_MOD = '--invalid';
 const form = document.getElementById('form-contact');
 
 const MIN_CHARS = 2; const MAX_CHARS = 100;
@@ -7,12 +7,10 @@ const MIN_CHARS = 2; const MAX_CHARS = 100;
 
 const changeClass = (Element, valid) => {
     if(valid){ 
-        Element.classList.add(BASE_CLASS+VALID_MOD);
         Element.classList.remove(BASE_CLASS+INVALID_MOD);
     }
     else{
         Element.classList.add(BASE_CLASS+INVALID_MOD);
-        Element.classList.remove(BASE_CLASS+VALID_MOD);
     }
 }
 
@@ -20,7 +18,7 @@ const validateForm = event => {
     let validationString = '';
     const validation = (Element, validationFn) => {
         const isValid = validationFn(Element.value);
-        changeClass(Element, validationFn(Element.value));
+        changeClass(Element, isValid);
         return isValid;
     };
 
@@ -36,7 +34,7 @@ const validateForm = event => {
 
     //Email Validation
     const email = event.target.elements['email'];
-    const emailIsValid = validation(email, window.emailValid);
+    const emailIsValid = validation(email, emailValid);
     if(!emailIsValid) validationString = validationString.concat('+ Enter a valid email \n');
 
     //Checkbox

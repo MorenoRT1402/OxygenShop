@@ -4,7 +4,7 @@ const sendData = event => {
     const email = event.target.elements["email"];
 
     const api = 'https://jsonplaceholder.typicode.com/';
-    const apiPost = api+'posts';
+    const apiPost = `${api}posts`;
 
     fetch( apiPost, {
         method: 'POST',

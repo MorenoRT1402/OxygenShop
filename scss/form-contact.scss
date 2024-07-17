@@ -53,17 +53,16 @@ $form-contact-margin : 1.5em;
         }
 
         &__value {
-            @mixin valid($color : #95989A){
-                @extend .form-contact__input__value;
-                border-bottom: .1rem solid $color;
-            }
 
             margin-top: 1rem;
             width: 100%;
             border: 0;
+            border-bottom: .1rem solid $valid-color;
 
-            &--valid { @include valid($valid-color) }
-            &--invalid { @include valid($invalid-color) }
+            &--invalid {                 
+                @extend .form-contact__input__value;
+                border-bottom: .1rem solid $invalid-color;
+            }
         }
     }
 

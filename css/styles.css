@@ -33,7 +33,7 @@
   display: none; }
 
 .invalid {
-  border: 2px solid red; }
+  border-color: red; }
 
 @media screen and (min-width: 1000px) {
   .desktop--none {
@@ -432,12 +432,11 @@ nav.edge {
       font-size: 11px;
       line-height: 14.98px;
       letter-spacing: 3.28px; }
-    .form-contact__input__value, .form-contact__input__value--valid, .form-contact__input__value--invalid {
+    .form-contact__input__value, .form-contact__input__value--invalid {
       margin-top: 1rem;
       width: 100%;
-      border: 0; }
-      .form-contact__input__value--valid {
-        border-bottom: 0.1rem solid #95989A; }
+      border: 0;
+      border-bottom: 0.1rem solid #95989A; }
       .form-contact__input__value--invalid {
         border-bottom: 0.1rem solid red; }
   .form-contact__terms {

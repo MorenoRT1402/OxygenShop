@@ -88,10 +88,8 @@
 
 .popup{
     position: fixed;
-    display: block;
     width: 80%;
-    max-height: 25%;
-    padding: .3em;
+    max-height: 26%;
     border-radius: 14px;
     border:1px solid white;
     background-color: $theme;
@@ -104,13 +102,14 @@
 
 
     button {
-        position: absolute;
+        position: relative;
         right: 0;
         font-size: xx-large;
-        margin-right: 1%;
+        margin-left: 45%;
         border: transparent;
         background-color: transparent;
         color: white;
+        width: 100%;
     }
 
     h2{
@@ -119,8 +118,8 @@
     }
 
     form{
-        display: block;
-        margin-block: 2em;
+//        display: block;
+//        margin-block: .2em;
 
         label {
             display: block;

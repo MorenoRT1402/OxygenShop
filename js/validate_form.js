@@ -6,11 +6,12 @@ const MIN_CHARS = 2; const MAX_CHARS = 100;
 
 
 const changeClass = (Element, valid) => {
+    const invalid = `${BASE_CLASS}${INVALID_MOD}`
     if(valid){ 
-        Element.classList.remove(BASE_CLASS+INVALID_MOD);
+        Element.classList.remove(invalid);
     }
     else{
-        Element.classList.add(BASE_CLASS+INVALID_MOD);
+        Element.classList.add(invalid);
     }
 }
 

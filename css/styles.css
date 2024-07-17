@@ -586,10 +586,8 @@ footer .social {
 
 .popup, .popup--inactive {
   position: fixed;
-  display: block;
   width: 80%;
-  max-height: 25%;
-  padding: .3em;
+  max-height: 26%;
   border-radius: 14px;
   border: 1px solid white;
   background-color: #08a6e4;
@@ -597,36 +595,34 @@ footer .social {
   .popup--inactive {
     display: none; }
   .popup button, .popup--inactive button {
-    position: absolute;
+    position: relative;
     right: 0;
     font-size: xx-large;
-    margin-right: 1%;
+    margin-left: 45%;
     border: transparent;
     background-color: transparent;
-    color: white; }
+    color: white;
+    width: 100%; }
   .popup h2, .popup--inactive h2 {
     position: relative;
     color: white; }
-  .popup form, .popup--inactive form {
+  .popup form label, .popup--inactive form label {
     display: block;
-    margin-block: 2em; }
-    .popup form label, .popup--inactive form label {
-      display: block;
-      color: white; }
-    .popup form #popup__input-email, .popup--inactive form #popup__input-email {
-      border-bottom: 1px solid white;
-      color: #08a6e4;
-      font-size: large; }
-      .popup form #popup__input-email::placeholder, .popup--inactive form #popup__input-email::placeholder {
-        color: gray; }
-    .popup form #popup__button, .popup--inactive form #popup__button {
-      border-radius: 14px;
-      padding: 1em;
-      background-color: white;
-      color: #08a6e4;
-      font-weight: 700; }
-    .popup form input, .popup--inactive form input {
-      border: 0; }
+    color: white; }
+  .popup form #popup__input-email, .popup--inactive form #popup__input-email {
+    border-bottom: 1px solid white;
+    color: #08a6e4;
+    font-size: large; }
+    .popup form #popup__input-email::placeholder, .popup--inactive form #popup__input-email::placeholder {
+      color: gray; }
+  .popup form #popup__button, .popup--inactive form #popup__button {
+    border-radius: 14px;
+    padding: 1em;
+    background-color: white;
+    color: #08a6e4;
+    font-weight: 700; }
+  .popup form input, .popup--inactive form input {
+    border: 0; }
 
 @media screen and (min-width: 1000px) {
   .popup, .popup--inactive {

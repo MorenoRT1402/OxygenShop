@@ -3,6 +3,12 @@ $opensans : 'Open Sans', sans-serif;
 $bold : 700;
 $theme: #08a6e4;
 
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 .title {
     color: #08A6E4;
     font-family: $raleway;

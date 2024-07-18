@@ -68,16 +68,18 @@
 // Desktop
 @media screen and (min-width : 1000px) {
     .section-info {
-        padding: 5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
 
         &__article{
+            width: 70rem;
             display: flex;
             flex-direction: row;
             align-items: center;
-            justify-content: space-between;
 
             padding-top: 5rem;
-            margin-inline: 15em;
 
             &__headline {
                 &--last {
@@ -95,13 +97,18 @@
             }
 
             &__img-container {
-                right: 0;
-                margin-bottom: 0;
+                width: 60%;
+
+                &.little{
+                    width: 35%;
+                    margin: 0;
+                }
             }
 
             &__bg-img {     
                 &__right {
                     width: 16rem;
+                    left: 18.5rem;
                     bottom: 4rem;
                 }
 
@@ -125,41 +132,13 @@
             &--last{
                 display: flex;
                 justify-content: space-between;
-                margin-inline: 15em;
+                padding-top: 0;
+                background-color: transparent;
             }
         }
 
         &--reverse{
             flex-direction: row-reverse;
-            padding-right: 15rem;
         }
     }
-    /*
-    .section-info{
-
-        &--right {
-            position: relative;
-            right: 0;
-        }
-
-        &--left {
-            position: absolute;
-            left: 0;
-        }
-
-        &__article {
-            position: relative;
-            column-count: 2;
-
-            &__img-container{
-                width: 100%;
-            }
-
-            &__text {
-                position: relative;
-//                width: 50%;
-            }
-        }
-    }
-        */
 }

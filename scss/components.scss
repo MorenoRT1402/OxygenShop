@@ -51,7 +51,7 @@
     }
 
     &__img-container{
-        width: 100%;
+        width: 75%;
         height: 60%;
         margin: auto;
 
@@ -116,6 +116,12 @@
         color: white;
     }
 
+    p{
+        margin-top: .4em;
+        color: red;
+        font-size: larger;
+    }
+
     form{
 //        display: block;
 //        margin-block: .2em;
@@ -146,12 +152,21 @@
         input {
             border: 0;
         }
+
+        .invalid {
+            border-color: red;
+        }
     }
 }
 
 @media screen and (min-width : 1000px) {
     .popup{
         width: 33%;
+
+        p {
+            margin-top: 1.3em;
+            font-size: 25px;
+        }
     }
 
     .slider{

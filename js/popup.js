@@ -17,13 +17,19 @@ window.addEventListener('scroll', () => {
 })
 
 const popupForm = document.getElementById('popup-form');
+const errorDisplayer = document.getElementById('popup-error-displayer')
 popupForm.addEventListener('submit', event => {
     event.preventDefault();
     const email = event.target.elements["email"];
 
-    if(emailValid(email.value))
-        sendData({ email : email.value })
-    else email.style.borderColor = 'red';
+    if(emailValid(email.value)){
+        sendData({ email : email.value });
+        email.classList.remove('invalid');
+        errorDisplayer.classList.add('inactive');
+    } else { 
+        email.classList.add('invalid'); 
+        errorDisplayer.classList.remove('inactive');
+    }
 
 })
 

@@ -1,7 +1,6 @@
 const POPUP_KEY = 'popup-closed';
 const popup = document.getElementById('popup-subscribe');
 const popupClose = document.getElementById('popup__close');
-console.log(popupClose);
 
 const show = () => {
     if(sessionStorage.getItem( POPUP_KEY )) return;

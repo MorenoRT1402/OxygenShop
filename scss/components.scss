@@ -51,8 +51,8 @@
     }
 
     &__img-container{
-        width: 75%;
-        height: 60%;
+        width: 80%;
+        height: 75%;
         margin: auto;
 
         img {
@@ -170,7 +170,11 @@
     }
 
     .slider{
-        height: 70rem;
+        height: 45rem;
+
+        &__img-container{
+            width: 90%;
+        }
 
         &__images-summary {
             &__button {
